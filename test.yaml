@@ -1,0 +1,3452 @@
+---
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323783092358'
+    min_position: '1323783092358'
+    created_at: Tue Dec 13 13:31:32 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: DamoclesBDA
+      in_reply_to_status_id_str: 
+      retweeted: false
+      in_reply_to_status_id: 
+      in_reply_to_user_id_str: '149429315'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        screen_name: Rogue_Leader
+        default_profile_image: false
+        following: false
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 0f000f
+        description: Chinny Reckon
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        lang: en
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        verified: false
+        id: 4722061
+        time_zone: London
+        profile_background_color: 0f000f
+        location: Dangling
+      created_at: Tue Dec 13 13:29:01 +0000 2011
+      truncated: false
+      id_str: '146582398249869312'
+      contributors: 
+      place: 
+      source: <a href="http://anapewithangelglands.com" rel="nofollow">Twubes</a>
+      in_reply_to_user_id: 149429315
+      id: 146582398249869312
+      text: ! '@DamoclesBDA I''m testing the Ruby Twitter API'
+    target_objects_size: 1
+    targets:
+    - in_reply_to_user_id: 4722061
+      geo: 
+      coordinates: 
+      retweet_count: 0
+      favorited: false
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '146582398249869312'
+      user:
+        verified: false
+        protected: false
+        screen_name: DamoclesBDA
+        following: true
+        time_zone: Dublin
+        profile_background_color: '131516'
+        url: 
+        name: Damocles
+        contributors_enabled: false
+        profile_background_tile: true
+        followers_count: 88
+        profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        default_profile_image: false
+        utc_offset: 0
+        friends_count: 82
+        profile_sidebar_fill_color: efefef
+        description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+          And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional
+          Shark Fighter]"
+        default_profile: false
+        is_translator: false
+        created_at: Sat May 29 07:50:03 +0000 2010
+        profile_sidebar_border_color: eeeeee
+        notifications: false
+        profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+        favourites_count: 0
+        lang: en
+        profile_use_background_image: true
+        follow_request_sent: false
+        statuses_count: 8146
+        geo_enabled: true
+        profile_text_color: '333333'
+        id_str: '149429315'
+        profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+        profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        id: 149429315
+        show_all_inline_media: true
+        listed_count: 11
+        profile_link_color: '009999'
+        location: ''
+      created_at: Tue Dec 13 13:31:32 +0000 2011
+      retweeted: false
+      in_reply_to_status_id: 146582398249869312
+      in_reply_to_user_id_str: '4722061'
+      place: 
+      truncated: false
+      source: web
+      id_str: '146583029593276416'
+      id: 146583029593276416
+      contributors: 
+      text: ! '@Rogue_Leader Curries by twitter?  Sweet.'
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: true
+      followers_count: 88
+      protected: false
+      profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      screen_name: DamoclesBDA
+      default_profile_image: false
+      following: true
+      friends_count: 82
+      profile_sidebar_fill_color: efefef
+      url: 
+      name: Damocles
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: eeeeee
+      description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+        And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional Shark
+        Fighter]"
+      default_profile: false
+      profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+      favourites_count: 0
+      profile_use_background_image: true
+      created_at: Sat May 29 07:50:03 +0000 2010
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        possibly_sensitive: false
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 15:39:14 +0000 2011
+        truncated: false
+        id_str: '146615165994016768'
+        contributors: 
+        place: 
+        source: <a href="http://twitter.com/tweetbutton" rel="nofollow">Tweet Button</a>
+        in_reply_to_user_id: 
+        id: 146615165994016768
+        text: ! '.@edwestonline defends a ''bunch of insular snobs'', from the New
+          York Times, someone has to: http://t.co/X6vHtyw9'
+      follow_request_sent: false
+      statuses_count: 8148
+      geo_enabled: true
+      notifications: false
+      profile_text_color: '333333'
+      id_str: '149429315'
+      lang: en
+      profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+      profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      show_all_inline_media: true
+      listed_count: 11
+      profile_link_color: '009999'
+      verified: false
+      id: 149429315
+      time_zone: Dublin
+      profile_background_color: '131516'
+      location: ''
+    sources_size: 1
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323782615146'
+    min_position: '1323782615146'
+    created_at: Tue Dec 13 13:23:35 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: 
+      in_reply_to_status_id_str: 
+      retweeted: false
+      in_reply_to_status_id: 
+      in_reply_to_user_id_str: 
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        screen_name: Rogue_Leader
+        default_profile_image: false
+        following: false
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 0f000f
+        description: Chinny Reckon
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        lang: en
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        verified: false
+        id: 4722061
+        time_zone: London
+        profile_background_color: 0f000f
+        location: Dangling
+      created_at: Tue Dec 13 13:21:05 +0000 2011
+      truncated: false
+      id_str: '146580400557404160'
+      contributors: 
+      place: 
+      source: <a href="http://anapewithangelglands.com" rel="nofollow">Twubes</a>
+      in_reply_to_user_id: 
+      id: 146580400557404160
+      text: Hopehopehope
+    target_objects_size: 1
+    targets:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '146580400557404160'
+      retweeted: false
+      in_reply_to_status_id: 146580400557404160
+      in_reply_to_user_id_str: '4722061'
+      user:
+        contributors_enabled: false
+        profile_background_tile: true
+        followers_count: 88
+        protected: false
+        profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        screen_name: DamoclesBDA
+        default_profile_image: false
+        following: true
+        friends_count: 82
+        profile_sidebar_fill_color: efefef
+        url: 
+        name: Damocles
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: eeeeee
+        description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+          And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional
+          Shark Fighter]"
+        profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+        favourites_count: 0
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sat May 29 07:50:03 +0000 2010
+        follow_request_sent: false
+        statuses_count: 8148
+        geo_enabled: true
+        notifications: false
+        profile_text_color: '333333'
+        id_str: '149429315'
+        lang: en
+        profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+        profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        show_all_inline_media: true
+        listed_count: 11
+        profile_link_color: '009999'
+        verified: false
+        id: 149429315
+        time_zone: Dublin
+        profile_background_color: '131516'
+        location: ''
+      created_at: Tue Dec 13 13:23:34 +0000 2011
+      truncated: false
+      id_str: '146581026314010624'
+      contributors: 
+      place: 
+      source: web
+      in_reply_to_user_id: 4722061
+      id: 146581026314010624
+      text: ! '@Rogue_Leader Que?'
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: true
+      followers_count: 88
+      protected: false
+      profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      screen_name: DamoclesBDA
+      default_profile_image: false
+      following: true
+      friends_count: 82
+      profile_sidebar_fill_color: efefef
+      url: 
+      name: Damocles
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: eeeeee
+      description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+        And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional Shark
+        Fighter]"
+      default_profile: false
+      profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+      favourites_count: 0
+      profile_use_background_image: true
+      created_at: Sat May 29 07:50:03 +0000 2010
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        possibly_sensitive: false
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 15:39:14 +0000 2011
+        truncated: false
+        id_str: '146615165994016768'
+        contributors: 
+        place: 
+        source: <a href="http://twitter.com/tweetbutton" rel="nofollow">Tweet Button</a>
+        in_reply_to_user_id: 
+        id: 146615165994016768
+        text: ! '.@edwestonline defends a ''bunch of insular snobs'', from the New
+          York Times, someone has to: http://t.co/X6vHtyw9'
+      follow_request_sent: false
+      statuses_count: 8148
+      geo_enabled: true
+      notifications: false
+      profile_text_color: '333333'
+      id_str: '149429315'
+      lang: en
+      profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+      profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      show_all_inline_media: true
+      listed_count: 11
+      profile_link_color: '009999'
+      verified: false
+      id: 149429315
+      time_zone: Dublin
+      profile_background_color: '131516'
+      location: ''
+    sources_size: 1
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323777494360'
+    min_position: '1323777494360'
+    created_at: Tue Dec 13 11:58:14 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: frak
+      in_reply_to_status_id_str: 
+      retweeted: false
+      in_reply_to_status_id: 
+      in_reply_to_user_id_str: '3411361'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        screen_name: Rogue_Leader
+        default_profile_image: false
+        following: false
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 0f000f
+        description: Chinny Reckon
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        lang: en
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        verified: false
+        id: 4722061
+        time_zone: London
+        profile_background_color: 0f000f
+        location: Dangling
+      created_at: Tue Dec 13 11:45:36 +0000 2011
+      truncated: false
+      id_str: '146556369485561856'
+      contributors: 
+      place: 
+      source: <a href="http://anapewithangelglands.com" rel="nofollow">Twubes</a>
+      in_reply_to_user_id: 3411361
+      id: 146556369485561856
+      text: ! '@frak I *knew* they''d fuck it up. Greedy arseholes.'
+    target_objects_size: 1
+    targets:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '146556369485561856'
+      retweeted: false
+      in_reply_to_status_id: 146556369485561856
+      in_reply_to_user_id_str: '4722061'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 1075
+        protected: false
+        profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+        screen_name: frak
+        default_profile_image: false
+        following: true
+        friends_count: 628
+        profile_sidebar_fill_color: fff600
+        url: http://clicknology.it/std-dev
+        name: Mikey
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 009fc7
+        description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana
+          - please check my link if you are into dance music. Master of the #NinjaRT'
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        favourites_count: 55
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Wed Apr 04 10:42:54 +0000 2007
+        follow_request_sent: false
+        statuses_count: 75367
+        geo_enabled: true
+        notifications: false
+        profile_text_color: 006a8a
+        id_str: '3411361'
+        lang: en
+        profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+        show_all_inline_media: false
+        listed_count: 108
+        profile_link_color: 00c0f0
+        verified: false
+        id: 3411361
+        time_zone: London
+        profile_background_color: '000000'
+        location: London
+      created_at: Tue Dec 13 11:58:14 +0000 2011
+      truncated: false
+      id_str: '146559549921427456'
+      contributors: 
+      place: 
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      in_reply_to_user_id: 4722061
+      id: 146559549921427456
+      text: ! '@Rogue_Leader some parts of it still keep the Camden feel, but it feels
+        much more closed in now that it ever did'
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 1075
+      protected: false
+      profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+      screen_name: frak
+      default_profile_image: false
+      following: true
+      friends_count: 628
+      profile_sidebar_fill_color: fff600
+      url: http://clicknology.it/std-dev
+      name: Mikey
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 009fc7
+      description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana -
+        please check my link if you are into dance music. Master of the #NinjaRT'
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      favourites_count: 55
+      profile_use_background_image: true
+      created_at: Wed Apr 04 10:42:54 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 14:08:45 +0000 2011
+        truncated: false
+        id_str: '146592396522688512'
+        contributors: 
+        place: 
+        source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+        in_reply_to_user_id: 
+        id: 146592396522688512
+        text: Finally made the leap to a sliding keyboard (SlideIT) rather than tippy
+          tapping - it makes for much more interesting fails
+      follow_request_sent: false
+      statuses_count: 75367
+      geo_enabled: true
+      notifications: false
+      profile_text_color: 006a8a
+      id_str: '3411361'
+      lang: en
+      profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+      show_all_inline_media: false
+      listed_count: 108
+      profile_link_color: 00c0f0
+      verified: false
+      id: 3411361
+      default_profile: false
+      time_zone: London
+      profile_background_color: '000000'
+      location: London
+    sources_size: 1
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323775523447'
+    min_position: '1323775523447'
+    created_at: Tue Dec 13 11:25:23 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: frak
+      in_reply_to_status_id_str: '146359467959795713'
+      retweeted: false
+      in_reply_to_status_id: 146359467959795713
+      in_reply_to_user_id_str: '3411361'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        screen_name: Rogue_Leader
+        default_profile_image: false
+        following: false
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 0f000f
+        description: Chinny Reckon
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        lang: en
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        verified: false
+        id: 4722061
+        time_zone: London
+        profile_background_color: 0f000f
+        location: Dangling
+      created_at: Tue Dec 13 11:24:46 +0000 2011
+      truncated: false
+      id_str: '146551126886580224'
+      contributors: 
+      place: 
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      in_reply_to_user_id: 3411361
+      id: 146551126886580224
+      text: ! '@frak I don''t think I''ve seen it. Have they fucked shit up?'
+    target_objects_size: 1
+    targets:
+    - in_reply_to_user_id: 4722061
+      geo: 
+      coordinates: 
+      retweet_count: 0
+      favorited: false
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '146551126886580224'
+      user:
+        verified: false
+        protected: false
+        screen_name: frak
+        following: true
+        time_zone: London
+        profile_background_color: '000000'
+        url: http://clicknology.it/std-dev
+        name: Mikey
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 1075
+        profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+        default_profile_image: false
+        utc_offset: 0
+        friends_count: 628
+        profile_sidebar_fill_color: fff600
+        description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana
+          - please check my link if you are into dance music. Master of the #NinjaRT'
+        default_profile: false
+        is_translator: false
+        created_at: Wed Apr 04 10:42:54 +0000 2007
+        profile_sidebar_border_color: 009fc7
+        notifications: false
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        favourites_count: 55
+        lang: en
+        profile_use_background_image: true
+        follow_request_sent: false
+        statuses_count: 75367
+        geo_enabled: true
+        profile_text_color: 006a8a
+        id_str: '3411361'
+        profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+        id: 3411361
+        show_all_inline_media: false
+        listed_count: 108
+        profile_link_color: 00c0f0
+        location: London
+      created_at: Tue Dec 13 11:25:23 +0000 2011
+      retweeted: false
+      in_reply_to_status_id: 146551126886580224
+      in_reply_to_user_id_str: '4722061'
+      place: 
+      truncated: false
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      id_str: '146551283367677952'
+      id: 146551283367677952
+      contributors: 
+      text: ! '@Rogue_Leader Big massive concrete/steel/glass contraption right in
+        the middle of the market - pretty hard to miss, and fugly'
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 1075
+      protected: false
+      profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+      screen_name: frak
+      default_profile_image: false
+      following: true
+      friends_count: 628
+      profile_sidebar_fill_color: fff600
+      url: http://clicknology.it/std-dev
+      name: Mikey
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 009fc7
+      description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana -
+        please check my link if you are into dance music. Master of the #NinjaRT'
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      favourites_count: 55
+      profile_use_background_image: true
+      created_at: Wed Apr 04 10:42:54 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 14:08:45 +0000 2011
+        truncated: false
+        id_str: '146592396522688512'
+        contributors: 
+        place: 
+        source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+        in_reply_to_user_id: 
+        id: 146592396522688512
+        text: Finally made the leap to a sliding keyboard (SlideIT) rather than tippy
+          tapping - it makes for much more interesting fails
+      follow_request_sent: false
+      statuses_count: 75367
+      geo_enabled: true
+      notifications: false
+      profile_text_color: 006a8a
+      id_str: '3411361'
+      lang: en
+      profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+      show_all_inline_media: false
+      listed_count: 108
+      profile_link_color: 00c0f0
+      verified: false
+      id: 3411361
+      default_profile: false
+      time_zone: London
+      profile_background_color: '000000'
+      location: London
+    sources_size: 1
+- !ruby/object:Twitter::Follow
+  attrs:
+    max_position: '1323762510878'
+    min_position: '1323762510878'
+    created_at: Tue Dec 13 07:48:30 +0000 2011
+    target_objects: []
+    target_objects_size: 0
+    targets:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 653
+      protected: false
+      profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+      screen_name: Rogue_Leader
+      default_profile_image: false
+      following: 
+      friends_count: 518
+      profile_sidebar_fill_color: e8e8e8
+      url: http://www.twitter.com/Rogue_Leader
+      name: Rogue
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 0f000f
+      description: Chinny Reckon
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+      favourites_count: 117
+      default_profile: false
+      profile_use_background_image: true
+      created_at: Sun Apr 15 09:39:21 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: DamoclesBDA
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: '149429315'
+        created_at: Tue Dec 13 13:29:01 +0000 2011
+        truncated: false
+        id_str: '146582398249869312'
+        contributors: 
+        place: 
+        source: <a href="http://anapewithangelglands.com" rel="nofollow">Twubes</a>
+        in_reply_to_user_id: 149429315
+        id: 146582398249869312
+        text: ! '@DamoclesBDA I''m testing the Ruby Twitter API'
+      follow_request_sent: 
+      statuses_count: 15566
+      geo_enabled: false
+      notifications: 
+      profile_text_color: '969494'
+      id_str: '4722061'
+      lang: en
+      profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+      show_all_inline_media: false
+      listed_count: 57
+      profile_link_color: 4011d9
+      verified: false
+      id: 4722061
+      time_zone: London
+      profile_background_color: 0f000f
+      location: Dangling
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: true
+      followers_count: 831
+      protected: false
+      profile_image_url: http://a3.twimg.com/profile_images/1135188869/Me_cropped_twitter_normal.jpg
+      screen_name: nejomo
+      default_profile_image: false
+      following: false
+      friends_count: 882
+      profile_sidebar_fill_color: 0f0e0e
+      url: http://nejomo.blogspot.com/
+      name: nejomo
+      is_translator: false
+      utc_offset: 14400
+      profile_sidebar_border_color: 1c1919
+      description: Everything was going so well and then I left primary school....
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/23799924/Pattern_small.jpg
+      favourites_count: 19
+      default_profile: false
+      profile_use_background_image: true
+      created_at: Mon Sep 29 09:58:52 +0000 2008
+      follow_request_sent: false
+      statuses_count: 11287
+      geo_enabled: true
+      notifications: false
+      profile_text_color: dbadb6
+      id_str: '16509795'
+      lang: en
+      profile_background_image_url: http://a1.twimg.com/profile_background_images/23799924/Pattern_small.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1135188869/Me_cropped_twitter_normal.jpg
+      show_all_inline_media: false
+      listed_count: 37
+      profile_link_color: d93636
+      verified: false
+      id: 16509795
+      time_zone: Abu Dhabi
+      profile_background_color: '171515'
+      location: Jordan (Yes we've moved!)
+    sources_size: 1
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323729791115'
+    min_position: '1323729791115'
+    created_at: Mon Dec 12 22:43:11 +0000 2011
+    target_objects:
+    - in_reply_to_user_id: 3411361
+      geo: 
+      coordinates: 
+      retweet_count: 0
+      favorited: false
+      in_reply_to_screen_name: frak
+      in_reply_to_status_id_str: '146354398707187713'
+      user:
+        verified: false
+        protected: false
+        screen_name: Rogue_Leader
+        following: false
+        time_zone: London
+        profile_background_color: 0f000f
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        default_profile_image: false
+        utc_offset: 0
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        description: Chinny Reckon
+        default_profile: false
+        is_translator: false
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        profile_sidebar_border_color: 0f000f
+        notifications: false
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        lang: en
+        profile_use_background_image: true
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        id: 4722061
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        location: Dangling
+      created_at: Mon Dec 12 22:42:02 +0000 2011
+      retweeted: false
+      in_reply_to_status_id: 146354398707187713
+      in_reply_to_user_id_str: '3411361'
+      place: 
+      truncated: false
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      id_str: '146359180377333760'
+      id: 146359180377333760
+      contributors: 
+      text: ! '@frak not less than two years ago. Why do you ask?'
+    target_objects_size: 1
+    targets:
+    - in_reply_to_user_id: 4722061
+      geo: 
+      coordinates: 
+      retweet_count: 0
+      favorited: false
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '146359180377333760'
+      user:
+        verified: false
+        protected: false
+        screen_name: frak
+        following: true
+        time_zone: London
+        profile_background_color: '000000'
+        url: http://clicknology.it/std-dev
+        name: Mikey
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 1075
+        profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+        default_profile_image: false
+        utc_offset: 0
+        friends_count: 628
+        profile_sidebar_fill_color: fff600
+        description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana
+          - please check my link if you are into dance music. Master of the #NinjaRT'
+        default_profile: false
+        is_translator: false
+        created_at: Wed Apr 04 10:42:54 +0000 2007
+        profile_sidebar_border_color: 009fc7
+        notifications: false
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        favourites_count: 55
+        lang: en
+        profile_use_background_image: true
+        follow_request_sent: false
+        statuses_count: 75367
+        geo_enabled: true
+        profile_text_color: 006a8a
+        id_str: '3411361'
+        profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+        id: 3411361
+        show_all_inline_media: false
+        listed_count: 108
+        profile_link_color: 00c0f0
+        location: London
+      created_at: Mon Dec 12 22:43:11 +0000 2011
+      retweeted: false
+      in_reply_to_status_id: 146359180377333760
+      in_reply_to_user_id_str: '4722061'
+      place: 
+      truncated: false
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      id_str: '146359467959795713'
+      id: 146359467959795713
+      contributors: 
+      text: ! '@Rogue_Leader was my first time there today since they built that new
+        thing in the middle of it - quite different now, eh?'
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 1075
+      protected: false
+      profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+      screen_name: frak
+      default_profile_image: false
+      following: true
+      friends_count: 628
+      profile_sidebar_fill_color: fff600
+      url: http://clicknology.it/std-dev
+      name: Mikey
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 009fc7
+      description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana -
+        please check my link if you are into dance music. Master of the #NinjaRT'
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      favourites_count: 55
+      profile_use_background_image: true
+      created_at: Wed Apr 04 10:42:54 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 14:08:45 +0000 2011
+        truncated: false
+        id_str: '146592396522688512'
+        contributors: 
+        place: 
+        source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+        in_reply_to_user_id: 
+        id: 146592396522688512
+        text: Finally made the leap to a sliding keyboard (SlideIT) rather than tippy
+          tapping - it makes for much more interesting fails
+      follow_request_sent: false
+      statuses_count: 75367
+      geo_enabled: true
+      notifications: false
+      profile_text_color: 006a8a
+      id_str: '3411361'
+      lang: en
+      profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+      show_all_inline_media: false
+      listed_count: 108
+      profile_link_color: 00c0f0
+      verified: false
+      id: 3411361
+      default_profile: false
+      time_zone: London
+      profile_background_color: '000000'
+      location: London
+    sources_size: 1
+- !ruby/object:Twitter::Mention
+  attrs:
+    max_position: '1323728582546'
+    min_position: '1323728582546'
+    created_at: Mon Dec 12 22:23:02 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: 
+      retweeted: false
+      in_reply_to_status_id: 
+      in_reply_to_user_id_str: '4722061'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 1075
+        protected: false
+        profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+        screen_name: frak
+        default_profile_image: false
+        following: true
+        friends_count: 628
+        profile_sidebar_fill_color: fff600
+        url: http://clicknology.it/std-dev
+        name: Mikey
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 009fc7
+        description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana
+          - please check my link if you are into dance music. Master of the #NinjaRT'
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        favourites_count: 55
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Wed Apr 04 10:42:54 +0000 2007
+        follow_request_sent: false
+        statuses_count: 75367
+        geo_enabled: true
+        notifications: false
+        profile_text_color: 006a8a
+        id_str: '3411361'
+        lang: en
+        profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+        show_all_inline_media: false
+        listed_count: 108
+        profile_link_color: 00c0f0
+        verified: false
+        id: 3411361
+        time_zone: London
+        profile_background_color: '000000'
+        location: London
+      created_at: Mon Dec 12 22:23:02 +0000 2011
+      truncated: false
+      id_str: '146354398707187713'
+      contributors: 
+      place: 
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      in_reply_to_user_id: 4722061
+      id: 146354398707187713
+      text: ! '@Rogue_Leader when was the last time you went down to Camden Market?'
+    target_objects_size: 1
+    targets:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 653
+      protected: false
+      profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+      screen_name: Rogue_Leader
+      default_profile_image: false
+      following: 
+      friends_count: 518
+      profile_sidebar_fill_color: e8e8e8
+      url: http://www.twitter.com/Rogue_Leader
+      name: Rogue
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 0f000f
+      description: Chinny Reckon
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+      favourites_count: 117
+      default_profile: false
+      profile_use_background_image: true
+      created_at: Sun Apr 15 09:39:21 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: DamoclesBDA
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: '149429315'
+        created_at: Tue Dec 13 13:29:01 +0000 2011
+        truncated: false
+        id_str: '146582398249869312'
+        contributors: 
+        place: 
+        source: <a href="http://anapewithangelglands.com" rel="nofollow">Twubes</a>
+        in_reply_to_user_id: 149429315
+        id: 146582398249869312
+        text: ! '@DamoclesBDA I''m testing the Ruby Twitter API'
+      follow_request_sent: 
+      statuses_count: 15566
+      geo_enabled: false
+      notifications: 
+      profile_text_color: '969494'
+      id_str: '4722061'
+      lang: en
+      profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+      show_all_inline_media: false
+      listed_count: 57
+      profile_link_color: 4011d9
+      verified: false
+      id: 4722061
+      time_zone: London
+      profile_background_color: 0f000f
+      location: Dangling
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 1075
+      protected: false
+      profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+      screen_name: frak
+      default_profile_image: false
+      following: true
+      friends_count: 628
+      profile_sidebar_fill_color: fff600
+      url: http://clicknology.it/std-dev
+      name: Mikey
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 009fc7
+      description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana -
+        please check my link if you are into dance music. Master of the #NinjaRT'
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      favourites_count: 55
+      profile_use_background_image: true
+      created_at: Wed Apr 04 10:42:54 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 14:08:45 +0000 2011
+        truncated: false
+        id_str: '146592396522688512'
+        contributors: 
+        place: 
+        source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+        in_reply_to_user_id: 
+        id: 146592396522688512
+        text: Finally made the leap to a sliding keyboard (SlideIT) rather than tippy
+          tapping - it makes for much more interesting fails
+      follow_request_sent: false
+      statuses_count: 75367
+      geo_enabled: true
+      notifications: false
+      profile_text_color: 006a8a
+      id_str: '3411361'
+      lang: en
+      profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+      show_all_inline_media: false
+      listed_count: 108
+      profile_link_color: 00c0f0
+      verified: false
+      id: 3411361
+      default_profile: false
+      time_zone: London
+      profile_background_color: '000000'
+      location: London
+    sources_size: 1
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323468584688'
+    min_position: '1323468584688'
+    created_at: Fri Dec 09 22:09:44 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: jamiepotter
+      in_reply_to_status_id_str: 
+      retweeted: false
+      in_reply_to_status_id: 
+      in_reply_to_user_id_str: '18634534'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        screen_name: Rogue_Leader
+        default_profile_image: false
+        following: false
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 0f000f
+        description: Chinny Reckon
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        lang: en
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        verified: false
+        id: 4722061
+        time_zone: London
+        profile_background_color: 0f000f
+        location: Dangling
+      created_at: Fri Dec 09 19:23:40 +0000 2011
+      truncated: false
+      id_str: '145222094601457664'
+      contributors: 
+      place: 
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      in_reply_to_user_id: 18634534
+      id: 145222094601457664
+      text: ! '@jamiepotter you can use different browsers. If you want to use Chrome,
+        you can download Canary. It''ll run side-by-side @bc_tmh'
+    target_objects_size: 1
+    targets:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '145222094601457664'
+      retweeted: false
+      in_reply_to_status_id: 145222094601457664
+      in_reply_to_user_id_str: '4722061'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 1765
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1215462040/timhardy2011_normal.jpg
+        screen_name: bc_tmh
+        default_profile_image: false
+        following: true
+        friends_count: 325
+        profile_sidebar_fill_color: DDEEF6
+        url: http://beyondclicktivism.com/
+        name: Tim Hardy
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: C0DEED
+        description: Cyber-sceptic looking for realistic ways in which technology
+          can drive social and political change and empower individuals
+        profile_background_image_url_https: https://si0.twimg.com/images/themes/theme1/bg.png
+        favourites_count: 1714
+        default_profile: true
+        profile_use_background_image: true
+        created_at: Fri Jan 14 11:30:17 +0000 2011
+        follow_request_sent: false
+        statuses_count: 13049
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '333333'
+        id_str: '238108784'
+        lang: en
+        profile_background_image_url: http://a0.twimg.com/images/themes/theme1/bg.png
+        profile_image_url_https: https://si0.twimg.com/profile_images/1215462040/timhardy2011_normal.jpg
+        show_all_inline_media: false
+        listed_count: 79
+        profile_link_color: 0084B4
+        verified: false
+        id: 238108784
+        time_zone: London
+        profile_background_color: C0DEED
+        location: London
+      created_at: Fri Dec 09 22:09:44 +0000 2011
+      truncated: false
+      id_str: '145263888697528320'
+      contributors: 
+      place: 
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      in_reply_to_user_id: 4722061
+      id: 145263888697528320
+      text: ! '@Rogue_Leader @jamiepotter interesting. I''ll check out Canary, thanks'
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 1765
+      protected: false
+      profile_image_url: http://a1.twimg.com/profile_images/1215462040/timhardy2011_normal.jpg
+      screen_name: bc_tmh
+      default_profile_image: false
+      following: true
+      friends_count: 325
+      profile_sidebar_fill_color: DDEEF6
+      url: http://beyondclicktivism.com/
+      name: Tim Hardy
+      is_translator: false
+      default_profile: true
+      utc_offset: 0
+      profile_sidebar_border_color: C0DEED
+      description: Cyber-sceptic looking for realistic ways in which technology can
+        drive social and political change and empower individuals
+      profile_background_image_url_https: https://si0.twimg.com/images/themes/theme1/bg.png
+      favourites_count: 1714
+      profile_use_background_image: true
+      created_at: Fri Jan 14 11:30:17 +0000 2011
+      status:
+        retweet_count: 7
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 12:47:53 +0000 2011
+        truncated: true
+        id_str: '146572047219302400'
+        contributors: 
+        place: 
+        source: web
+        in_reply_to_user_id: 
+        id: 146572047219302400
+        retweeted_status:
+          retweet_count: 7
+          favorited: false
+          geo: 
+          coordinates: 
+          in_reply_to_screen_name: 
+          in_reply_to_status_id_str: 
+          retweeted: false
+          in_reply_to_status_id: 
+          in_reply_to_user_id_str: 
+          created_at: Tue Dec 13 12:41:38 +0000 2011
+          truncated: false
+          id_str: '146570474711822336'
+          contributors: 
+          place: 
+          source: <a href="http://twitter.com/#!/download/iphone" rel="nofollow">Twitter
+            for iPhone</a>
+          in_reply_to_user_id: 
+          id: 146570474711822336
+          text: We need brilliant and courageous journalists like @JasonNParkinson
+            to cover protests and disorder without fear of state intervention.
+        text: ! 'RT @Fitwatcher: We need brilliant and courageous journalists like
+          @JasonNParkinson to cover protests and disorder without fear of state  ...'
+      follow_request_sent: false
+      statuses_count: 13049
+      geo_enabled: false
+      notifications: false
+      profile_text_color: '333333'
+      id_str: '238108784'
+      lang: en
+      profile_background_image_url: http://a0.twimg.com/images/themes/theme1/bg.png
+      profile_image_url_https: https://si0.twimg.com/profile_images/1215462040/timhardy2011_normal.jpg
+      show_all_inline_media: false
+      listed_count: 79
+      profile_link_color: 0084B4
+      verified: false
+      id: 238108784
+      time_zone: London
+      profile_background_color: C0DEED
+      location: London
+    sources_size: 1
+- !ruby/object:Twitter::Mention
+  attrs:
+    max_position: '1323464408390'
+    min_position: '1323464408390'
+    created_at: Fri Dec 09 21:00:08 +0000 2011
+    target_objects:
+    - in_reply_to_user_id: 5154581
+      geo: 
+      coordinates: 
+      retweet_count: 0
+      favorited: false
+      in_reply_to_screen_name: ladyditax
+      in_reply_to_status_id_str: '145243422268194816'
+      user:
+        verified: false
+        protected: false
+        screen_name: frak
+        following: true
+        time_zone: London
+        profile_background_color: '000000'
+        url: http://clicknology.it/std-dev
+        name: Mikey
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 1075
+        profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+        default_profile_image: false
+        utc_offset: 0
+        friends_count: 628
+        profile_sidebar_fill_color: fff600
+        description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana
+          - please check my link if you are into dance music. Master of the #NinjaRT'
+        default_profile: false
+        is_translator: false
+        created_at: Wed Apr 04 10:42:54 +0000 2007
+        profile_sidebar_border_color: 009fc7
+        notifications: false
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        favourites_count: 55
+        lang: en
+        profile_use_background_image: true
+        follow_request_sent: false
+        statuses_count: 75367
+        geo_enabled: true
+        profile_text_color: 006a8a
+        id_str: '3411361'
+        profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+        id: 3411361
+        show_all_inline_media: false
+        listed_count: 108
+        profile_link_color: 00c0f0
+        location: London
+      created_at: Fri Dec 09 21:00:08 +0000 2011
+      retweeted: false
+      in_reply_to_status_id: 145243422268194816
+      in_reply_to_user_id_str: '5154581'
+      place: 
+      truncated: false
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      id_str: '145246371560173568'
+      id: 145246371560173568
+      contributors: 
+      text: ! '@ladyditax @Rogue_Leader nah, I reckon it is more to do with the general
+        mentality, good or bad'
+    target_objects_size: 1
+    targets:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 653
+      protected: false
+      profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+      screen_name: Rogue_Leader
+      default_profile_image: false
+      following: 
+      friends_count: 518
+      profile_sidebar_fill_color: e8e8e8
+      url: http://www.twitter.com/Rogue_Leader
+      name: Rogue
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 0f000f
+      description: Chinny Reckon
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+      favourites_count: 117
+      default_profile: false
+      profile_use_background_image: true
+      created_at: Sun Apr 15 09:39:21 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: DamoclesBDA
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: '149429315'
+        created_at: Tue Dec 13 13:29:01 +0000 2011
+        truncated: false
+        id_str: '146582398249869312'
+        contributors: 
+        place: 
+        source: <a href="http://anapewithangelglands.com" rel="nofollow">Twubes</a>
+        in_reply_to_user_id: 149429315
+        id: 146582398249869312
+        text: ! '@DamoclesBDA I''m testing the Ruby Twitter API'
+      follow_request_sent: 
+      statuses_count: 15566
+      geo_enabled: false
+      notifications: 
+      profile_text_color: '969494'
+      id_str: '4722061'
+      lang: en
+      profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+      show_all_inline_media: false
+      listed_count: 57
+      profile_link_color: 4011d9
+      verified: false
+      id: 4722061
+      time_zone: London
+      profile_background_color: 0f000f
+      location: Dangling
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 1075
+      protected: false
+      profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+      screen_name: frak
+      default_profile_image: false
+      following: true
+      friends_count: 628
+      profile_sidebar_fill_color: fff600
+      url: http://clicknology.it/std-dev
+      name: Mikey
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 009fc7
+      description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana -
+        please check my link if you are into dance music. Master of the #NinjaRT'
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      favourites_count: 55
+      profile_use_background_image: true
+      created_at: Wed Apr 04 10:42:54 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 14:08:45 +0000 2011
+        truncated: false
+        id_str: '146592396522688512'
+        contributors: 
+        place: 
+        source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+        in_reply_to_user_id: 
+        id: 146592396522688512
+        text: Finally made the leap to a sliding keyboard (SlideIT) rather than tippy
+          tapping - it makes for much more interesting fails
+      follow_request_sent: false
+      statuses_count: 75367
+      geo_enabled: true
+      notifications: false
+      profile_text_color: 006a8a
+      id_str: '3411361'
+      lang: en
+      profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+      show_all_inline_media: false
+      listed_count: 108
+      profile_link_color: 00c0f0
+      verified: false
+      id: 3411361
+      default_profile: false
+      time_zone: London
+      profile_background_color: '000000'
+      location: London
+    sources_size: 1
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323463705116'
+    min_position: '1323463705116'
+    created_at: Fri Dec 09 20:48:25 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: frak
+      in_reply_to_status_id_str: '145229266970357769'
+      retweeted: false
+      in_reply_to_status_id: 145229266970357769
+      in_reply_to_user_id_str: '3411361'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        screen_name: Rogue_Leader
+        default_profile_image: false
+        following: false
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 0f000f
+        description: Chinny Reckon
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        lang: en
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        verified: false
+        id: 4722061
+        time_zone: London
+        profile_background_color: 0f000f
+        location: Dangling
+      created_at: Fri Dec 09 20:11:41 +0000 2011
+      truncated: false
+      id_str: '145234178743615488'
+      contributors: 
+      place: 
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      in_reply_to_user_id: 3411361
+      id: 145234178743615488
+      text: ! '@frak I''m aware of lmgtfy and I can vouch that there''s no trickery
+        involved.  I wonder how that happened though @ladyditax'
+    target_objects_size: 1
+    targets:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '145234178743615488'
+      retweeted: false
+      in_reply_to_status_id: 145234178743615488
+      in_reply_to_user_id_str: '4722061'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 68
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1554699950/We_re-Not-in-Kansas-Anymore_normal.jpg
+        screen_name: ladyditax
+        default_profile_image: false
+        following: true
+        friends_count: 163
+        profile_sidebar_fill_color: e0ff92
+        url: 
+        name: D.
+        is_translator: false
+        utc_offset: 3600
+        profile_sidebar_border_color: 87bc44
+        description: ''
+        profile_background_image_url_https: https://si0.twimg.com/images/themes/theme1/bg.png
+        favourites_count: 0
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Wed Apr 18 20:48:42 +0000 2007
+        follow_request_sent: false
+        statuses_count: 1332
+        geo_enabled: false
+        notifications: true
+        profile_text_color: '000000'
+        id_str: '5154581'
+        lang: en
+        profile_background_image_url: http://a0.twimg.com/images/themes/theme1/bg.png
+        profile_image_url_https: https://si0.twimg.com/profile_images/1554699950/We_re-Not-in-Kansas-Anymore_normal.jpg
+        show_all_inline_media: false
+        listed_count: 0
+        profile_link_color: 0000ff
+        verified: false
+        id: 5154581
+        time_zone: Madrid
+        profile_background_color: 9ae4e8
+        location: ''
+      created_at: Fri Dec 09 20:48:25 +0000 2011
+      truncated: false
+      id_str: '145243422268194816'
+      contributors: 
+      place: 
+      source: <a href="http://blackberry.com/twitter" rel="nofollow">Twitter for BlackBerry®</a>
+      in_reply_to_user_id: 4722061
+      id: 145243422268194816
+      text: ! '@Rogue_Leader @frak Clearly a description of the nob allegedly running
+        the country. Certainly it''s what most of us know him by.'
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 68
+      protected: false
+      profile_image_url: http://a1.twimg.com/profile_images/1554699950/We_re-Not-in-Kansas-Anymore_normal.jpg
+      screen_name: ladyditax
+      default_profile_image: false
+      following: true
+      friends_count: 163
+      profile_sidebar_fill_color: e0ff92
+      url: 
+      name: D.
+      is_translator: false
+      utc_offset: 3600
+      profile_sidebar_border_color: 87bc44
+      description: ''
+      profile_background_image_url_https: https://si0.twimg.com/images/themes/theme1/bg.png
+      favourites_count: 0
+      default_profile: false
+      profile_use_background_image: true
+      created_at: Wed Apr 18 20:48:42 +0000 2007
+      follow_request_sent: false
+      statuses_count: 1332
+      geo_enabled: false
+      notifications: true
+      profile_text_color: '000000'
+      id_str: '5154581'
+      lang: en
+      profile_background_image_url: http://a0.twimg.com/images/themes/theme1/bg.png
+      profile_image_url_https: https://si0.twimg.com/profile_images/1554699950/We_re-Not-in-Kansas-Anymore_normal.jpg
+      show_all_inline_media: false
+      listed_count: 0
+      profile_link_color: 0000ff
+      verified: false
+      id: 5154581
+      time_zone: Madrid
+      profile_background_color: 9ae4e8
+      location: ''
+    sources_size: 1
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323461570777'
+    min_position: '1323461570777'
+    created_at: Fri Dec 09 20:12:50 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: frak
+      in_reply_to_status_id_str: '145229266970357769'
+      retweeted: false
+      in_reply_to_status_id: 145229266970357769
+      in_reply_to_user_id_str: '3411361'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        screen_name: Rogue_Leader
+        default_profile_image: false
+        following: false
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 0f000f
+        description: Chinny Reckon
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        lang: en
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        verified: false
+        id: 4722061
+        time_zone: London
+        profile_background_color: 0f000f
+        location: Dangling
+      created_at: Fri Dec 09 20:11:41 +0000 2011
+      truncated: false
+      id_str: '145234178743615488'
+      contributors: 
+      place: 
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      in_reply_to_user_id: 3411361
+      id: 145234178743615488
+      text: ! '@frak I''m aware of lmgtfy and I can vouch that there''s no trickery
+        involved.  I wonder how that happened though @ladyditax'
+    target_objects_size: 1
+    targets:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '145234178743615488'
+      retweeted: false
+      in_reply_to_status_id: 145234178743615488
+      in_reply_to_user_id_str: '4722061'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 1075
+        protected: false
+        profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+        screen_name: frak
+        default_profile_image: false
+        following: true
+        friends_count: 628
+        profile_sidebar_fill_color: fff600
+        url: http://clicknology.it/std-dev
+        name: Mikey
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 009fc7
+        description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana
+          - please check my link if you are into dance music. Master of the #NinjaRT'
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        favourites_count: 55
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Wed Apr 04 10:42:54 +0000 2007
+        follow_request_sent: false
+        statuses_count: 75367
+        geo_enabled: true
+        notifications: false
+        profile_text_color: 006a8a
+        id_str: '3411361'
+        lang: en
+        profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+        show_all_inline_media: false
+        listed_count: 108
+        profile_link_color: 00c0f0
+        verified: false
+        id: 3411361
+        time_zone: London
+        profile_background_color: '000000'
+        location: London
+      created_at: Fri Dec 09 20:12:50 +0000 2011
+      truncated: false
+      id_str: '145234470201597952'
+      contributors: 
+      place: 
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      in_reply_to_user_id: 4722061
+      id: 145234470201597952
+      text: ! '@Rogue_Leader no idea, but it impresses the nuts off me - someone at
+        google *knows* @ladyditax'
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 1075
+      protected: false
+      profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+      screen_name: frak
+      default_profile_image: false
+      following: true
+      friends_count: 628
+      profile_sidebar_fill_color: fff600
+      url: http://clicknology.it/std-dev
+      name: Mikey
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 009fc7
+      description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana -
+        please check my link if you are into dance music. Master of the #NinjaRT'
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      favourites_count: 55
+      profile_use_background_image: true
+      created_at: Wed Apr 04 10:42:54 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 14:08:45 +0000 2011
+        truncated: false
+        id_str: '146592396522688512'
+        contributors: 
+        place: 
+        source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+        in_reply_to_user_id: 
+        id: 146592396522688512
+        text: Finally made the leap to a sliding keyboard (SlideIT) rather than tippy
+          tapping - it makes for much more interesting fails
+      follow_request_sent: false
+      statuses_count: 75367
+      geo_enabled: true
+      notifications: false
+      profile_text_color: 006a8a
+      id_str: '3411361'
+      lang: en
+      profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+      show_all_inline_media: false
+      listed_count: 108
+      profile_link_color: 00c0f0
+      verified: false
+      id: 3411361
+      default_profile: false
+      time_zone: London
+      profile_background_color: '000000'
+      location: London
+    sources_size: 1
+- !ruby/object:Twitter::Mention
+  attrs:
+    max_position: '1323460330200'
+    min_position: '1323460330200'
+    created_at: Fri Dec 09 19:52:10 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      possibly_sensitive: false
+      coordinates: 
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: 
+      retweeted: false
+      in_reply_to_status_id: 
+      in_reply_to_user_id_str: '4722061'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 1075
+        protected: false
+        profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+        screen_name: frak
+        default_profile_image: false
+        following: true
+        friends_count: 628
+        profile_sidebar_fill_color: fff600
+        url: http://clicknology.it/std-dev
+        name: Mikey
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 009fc7
+        description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana
+          - please check my link if you are into dance music. Master of the #NinjaRT'
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        favourites_count: 55
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Wed Apr 04 10:42:54 +0000 2007
+        follow_request_sent: false
+        statuses_count: 75367
+        geo_enabled: true
+        notifications: false
+        profile_text_color: 006a8a
+        id_str: '3411361'
+        lang: en
+        profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+        show_all_inline_media: false
+        listed_count: 108
+        profile_link_color: 00c0f0
+        verified: false
+        id: 3411361
+        time_zone: London
+        profile_background_color: '000000'
+        location: London
+      created_at: Fri Dec 09 19:52:10 +0000 2011
+      truncated: false
+      id_str: '145229266970357769'
+      contributors: 
+      place: 
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      in_reply_to_user_id: 4722061
+      id: 145229266970357769
+      text: ! '@Rogue_Leader @ladyditax I assure you that there is no trickery involved
+        in this: http://t.co/HR5AuP58'
+    target_objects_size: 1
+    targets:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 653
+      protected: false
+      profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+      screen_name: Rogue_Leader
+      default_profile_image: false
+      following: 
+      friends_count: 518
+      profile_sidebar_fill_color: e8e8e8
+      url: http://www.twitter.com/Rogue_Leader
+      name: Rogue
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 0f000f
+      description: Chinny Reckon
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+      favourites_count: 117
+      default_profile: false
+      profile_use_background_image: true
+      created_at: Sun Apr 15 09:39:21 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: DamoclesBDA
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: '149429315'
+        created_at: Tue Dec 13 13:29:01 +0000 2011
+        truncated: false
+        id_str: '146582398249869312'
+        contributors: 
+        place: 
+        source: <a href="http://anapewithangelglands.com" rel="nofollow">Twubes</a>
+        in_reply_to_user_id: 149429315
+        id: 146582398249869312
+        text: ! '@DamoclesBDA I''m testing the Ruby Twitter API'
+      follow_request_sent: 
+      statuses_count: 15566
+      geo_enabled: false
+      notifications: 
+      profile_text_color: '969494'
+      id_str: '4722061'
+      lang: en
+      profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+      show_all_inline_media: false
+      listed_count: 57
+      profile_link_color: 4011d9
+      verified: false
+      id: 4722061
+      time_zone: London
+      profile_background_color: 0f000f
+      location: Dangling
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 1075
+      protected: false
+      profile_image_url: http://a2.twimg.com/profile_images/1569195903/happy_normal.gif
+      screen_name: frak
+      default_profile_image: false
+      following: true
+      friends_count: 628
+      profile_sidebar_fill_color: fff600
+      url: http://clicknology.it/std-dev
+      name: Mikey
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 009fc7
+      description: ! 'Swears a lot, makes a few funnies, in love with @TizBanana -
+        please check my link if you are into dance music. Master of the #NinjaRT'
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      favourites_count: 55
+      profile_use_background_image: true
+      created_at: Wed Apr 04 10:42:54 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 14:08:45 +0000 2011
+        truncated: false
+        id_str: '146592396522688512'
+        contributors: 
+        place: 
+        source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+        in_reply_to_user_id: 
+        id: 146592396522688512
+        text: Finally made the leap to a sliding keyboard (SlideIT) rather than tippy
+          tapping - it makes for much more interesting fails
+      follow_request_sent: false
+      statuses_count: 75367
+      geo_enabled: true
+      notifications: false
+      profile_text_color: 006a8a
+      id_str: '3411361'
+      lang: en
+      profile_background_image_url: http://a0.twimg.com/profile_background_images/31741459/mqlightshow.br.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1569195903/happy_normal.gif
+      show_all_inline_media: false
+      listed_count: 108
+      profile_link_color: 00c0f0
+      verified: false
+      id: 3411361
+      default_profile: false
+      time_zone: London
+      profile_background_color: '000000'
+      location: London
+    sources_size: 1
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323458323518'
+    min_position: '1323458323518'
+    created_at: Fri Dec 09 19:18:43 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: DamoclesBDA
+      in_reply_to_status_id_str: '145216105428955136'
+      retweeted: false
+      in_reply_to_status_id: 145216105428955136
+      in_reply_to_user_id_str: '149429315'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        screen_name: Rogue_Leader
+        default_profile_image: false
+        following: false
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 0f000f
+        description: Chinny Reckon
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        lang: en
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        verified: false
+        id: 4722061
+        time_zone: London
+        profile_background_color: 0f000f
+        location: Dangling
+      created_at: Fri Dec 09 19:10:46 +0000 2011
+      truncated: false
+      id_str: '145218850823217152'
+      contributors: 
+      place: 
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      in_reply_to_user_id: 149429315
+      id: 145218850823217152
+      text: ! '@DamoclesBDA Amen, brother.'
+    target_objects_size: 1
+    targets:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '145218850823217152'
+      retweeted: false
+      in_reply_to_status_id: 145218850823217152
+      in_reply_to_user_id_str: '4722061'
+      user:
+        contributors_enabled: false
+        profile_background_tile: true
+        followers_count: 88
+        protected: false
+        profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        screen_name: DamoclesBDA
+        default_profile_image: false
+        following: true
+        friends_count: 82
+        profile_sidebar_fill_color: efefef
+        url: 
+        name: Damocles
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: eeeeee
+        description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+          And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional
+          Shark Fighter]"
+        profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+        favourites_count: 0
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sat May 29 07:50:03 +0000 2010
+        follow_request_sent: false
+        statuses_count: 8148
+        geo_enabled: true
+        notifications: false
+        profile_text_color: '333333'
+        id_str: '149429315'
+        lang: en
+        profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+        profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        show_all_inline_media: true
+        listed_count: 11
+        profile_link_color: '009999'
+        verified: false
+        id: 149429315
+        time_zone: Dublin
+        profile_background_color: '131516'
+        location: ''
+      created_at: Fri Dec 09 19:18:43 +0000 2011
+      truncated: false
+      id_str: '145220850415714306'
+      contributors: 
+      place: 
+      source: <a href="http://83degrees.com/to/powertwitter" rel="nofollow">Power
+        Twitter</a>
+      in_reply_to_user_id: 4722061
+      id: 145220850415714306
+      text: ! '@Rogue_Leader One funny thing you can do is PM people (nellie) and
+        then delete it from your outbox.'
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: true
+      followers_count: 88
+      protected: false
+      profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      screen_name: DamoclesBDA
+      default_profile_image: false
+      following: true
+      friends_count: 82
+      profile_sidebar_fill_color: efefef
+      url: 
+      name: Damocles
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: eeeeee
+      description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+        And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional Shark
+        Fighter]"
+      default_profile: false
+      profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+      favourites_count: 0
+      profile_use_background_image: true
+      created_at: Sat May 29 07:50:03 +0000 2010
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        possibly_sensitive: false
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 15:39:14 +0000 2011
+        truncated: false
+        id_str: '146615165994016768'
+        contributors: 
+        place: 
+        source: <a href="http://twitter.com/tweetbutton" rel="nofollow">Tweet Button</a>
+        in_reply_to_user_id: 
+        id: 146615165994016768
+        text: ! '.@edwestonline defends a ''bunch of insular snobs'', from the New
+          York Times, someone has to: http://t.co/X6vHtyw9'
+      follow_request_sent: false
+      statuses_count: 8148
+      geo_enabled: true
+      notifications: false
+      profile_text_color: '333333'
+      id_str: '149429315'
+      lang: en
+      profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+      profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      show_all_inline_media: true
+      listed_count: 11
+      profile_link_color: '009999'
+      verified: false
+      id: 149429315
+      time_zone: Dublin
+      profile_background_color: '131516'
+      location: ''
+    sources_size: 1
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323458012542'
+    min_position: '1323458012542'
+    created_at: Fri Dec 09 19:13:32 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: DamoclesBDA
+      in_reply_to_status_id_str: '145216105428955136'
+      retweeted: false
+      in_reply_to_status_id: 145216105428955136
+      in_reply_to_user_id_str: '149429315'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        screen_name: Rogue_Leader
+        default_profile_image: false
+        following: false
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 0f000f
+        description: Chinny Reckon
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        lang: en
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        verified: false
+        id: 4722061
+        time_zone: London
+        profile_background_color: 0f000f
+        location: Dangling
+      created_at: Fri Dec 09 19:10:46 +0000 2011
+      truncated: false
+      id_str: '145218850823217152'
+      contributors: 
+      place: 
+      source: <a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>
+      in_reply_to_user_id: 149429315
+      id: 145218850823217152
+      text: ! '@DamoclesBDA Amen, brother.'
+    target_objects_size: 1
+    targets:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '145218850823217152'
+      retweeted: false
+      in_reply_to_status_id: 145218850823217152
+      in_reply_to_user_id_str: '4722061'
+      user:
+        contributors_enabled: false
+        profile_background_tile: true
+        followers_count: 88
+        protected: false
+        profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        screen_name: DamoclesBDA
+        default_profile_image: false
+        following: true
+        friends_count: 82
+        profile_sidebar_fill_color: efefef
+        url: 
+        name: Damocles
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: eeeeee
+        description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+          And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional
+          Shark Fighter]"
+        profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+        favourites_count: 0
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sat May 29 07:50:03 +0000 2010
+        follow_request_sent: false
+        statuses_count: 8148
+        geo_enabled: true
+        notifications: false
+        profile_text_color: '333333'
+        id_str: '149429315'
+        lang: en
+        profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+        profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        show_all_inline_media: true
+        listed_count: 11
+        profile_link_color: '009999'
+        verified: false
+        id: 149429315
+        time_zone: Dublin
+        profile_background_color: '131516'
+        location: ''
+      created_at: Fri Dec 09 19:13:32 +0000 2011
+      truncated: false
+      id_str: '145219546033299456'
+      contributors: 
+      place: 
+      source: web
+      in_reply_to_user_id: 4722061
+      id: 145219546033299456
+      text: ! '@Rogue_Leader I even PM''ed bollocks to thank him for it.'
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: true
+      followers_count: 88
+      protected: false
+      profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      screen_name: DamoclesBDA
+      default_profile_image: false
+      following: true
+      friends_count: 82
+      profile_sidebar_fill_color: efefef
+      url: 
+      name: Damocles
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: eeeeee
+      description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+        And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional Shark
+        Fighter]"
+      default_profile: false
+      profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+      favourites_count: 0
+      profile_use_background_image: true
+      created_at: Sat May 29 07:50:03 +0000 2010
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        possibly_sensitive: false
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 15:39:14 +0000 2011
+        truncated: false
+        id_str: '146615165994016768'
+        contributors: 
+        place: 
+        source: <a href="http://twitter.com/tweetbutton" rel="nofollow">Tweet Button</a>
+        in_reply_to_user_id: 
+        id: 146615165994016768
+        text: ! '.@edwestonline defends a ''bunch of insular snobs'', from the New
+          York Times, someone has to: http://t.co/X6vHtyw9'
+      follow_request_sent: false
+      statuses_count: 8148
+      geo_enabled: true
+      notifications: false
+      profile_text_color: '333333'
+      id_str: '149429315'
+      lang: en
+      profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+      profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      show_all_inline_media: true
+      listed_count: 11
+      profile_link_color: '009999'
+      verified: false
+      id: 149429315
+      time_zone: Dublin
+      profile_background_color: '131516'
+      location: ''
+    sources_size: 1
+- !ruby/object:Twitter::Mention
+  attrs:
+    max_position: '1323457192221'
+    min_position: '1323457192221'
+    created_at: Fri Dec 09 18:59:52 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      possibly_sensitive: false
+      coordinates: 
+      in_reply_to_screen_name: 
+      in_reply_to_status_id_str: 
+      retweeted: false
+      in_reply_to_status_id: 
+      in_reply_to_user_id_str: 
+      user:
+        contributors_enabled: false
+        profile_background_tile: true
+        followers_count: 88
+        protected: false
+        profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        screen_name: DamoclesBDA
+        default_profile_image: false
+        following: true
+        friends_count: 82
+        profile_sidebar_fill_color: efefef
+        url: 
+        name: Damocles
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: eeeeee
+        description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+          And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional
+          Shark Fighter]"
+        profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+        favourites_count: 0
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sat May 29 07:50:03 +0000 2010
+        follow_request_sent: false
+        statuses_count: 8148
+        geo_enabled: true
+        notifications: false
+        profile_text_color: '333333'
+        id_str: '149429315'
+        lang: en
+        profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+        profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        show_all_inline_media: true
+        listed_count: 11
+        profile_link_color: '009999'
+        verified: false
+        id: 149429315
+        time_zone: Dublin
+        profile_background_color: '131516'
+        location: ''
+      created_at: Fri Dec 09 18:59:52 +0000 2011
+      truncated: false
+      id_str: '145216105428955136'
+      contributors: 
+      place: 
+      source: web
+      in_reply_to_user_id: 
+      id: 145216105428955136
+      text: Snort, Big Style http://t.co/VBJS8HN0 @Rogue_Leader will get this one
+    target_objects_size: 1
+    targets:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 653
+      protected: false
+      profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+      screen_name: Rogue_Leader
+      default_profile_image: false
+      following: 
+      friends_count: 518
+      profile_sidebar_fill_color: e8e8e8
+      url: http://www.twitter.com/Rogue_Leader
+      name: Rogue
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 0f000f
+      description: Chinny Reckon
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+      favourites_count: 117
+      default_profile: false
+      profile_use_background_image: true
+      created_at: Sun Apr 15 09:39:21 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: DamoclesBDA
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: '149429315'
+        created_at: Tue Dec 13 13:29:01 +0000 2011
+        truncated: false
+        id_str: '146582398249869312'
+        contributors: 
+        place: 
+        source: <a href="http://anapewithangelglands.com" rel="nofollow">Twubes</a>
+        in_reply_to_user_id: 149429315
+        id: 146582398249869312
+        text: ! '@DamoclesBDA I''m testing the Ruby Twitter API'
+      follow_request_sent: 
+      statuses_count: 15566
+      geo_enabled: false
+      notifications: 
+      profile_text_color: '969494'
+      id_str: '4722061'
+      lang: en
+      profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+      show_all_inline_media: false
+      listed_count: 57
+      profile_link_color: 4011d9
+      verified: false
+      id: 4722061
+      time_zone: London
+      profile_background_color: 0f000f
+      location: Dangling
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: true
+      followers_count: 88
+      protected: false
+      profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      screen_name: DamoclesBDA
+      default_profile_image: false
+      following: true
+      friends_count: 82
+      profile_sidebar_fill_color: efefef
+      url: 
+      name: Damocles
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: eeeeee
+      description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+        And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional Shark
+        Fighter]"
+      default_profile: false
+      profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+      favourites_count: 0
+      profile_use_background_image: true
+      created_at: Sat May 29 07:50:03 +0000 2010
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        possibly_sensitive: false
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 15:39:14 +0000 2011
+        truncated: false
+        id_str: '146615165994016768'
+        contributors: 
+        place: 
+        source: <a href="http://twitter.com/tweetbutton" rel="nofollow">Tweet Button</a>
+        in_reply_to_user_id: 
+        id: 146615165994016768
+        text: ! '.@edwestonline defends a ''bunch of insular snobs'', from the New
+          York Times, someone has to: http://t.co/X6vHtyw9'
+      follow_request_sent: false
+      statuses_count: 8148
+      geo_enabled: true
+      notifications: false
+      profile_text_color: '333333'
+      id_str: '149429315'
+      lang: en
+      profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+      profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      show_all_inline_media: true
+      listed_count: 11
+      profile_link_color: '009999'
+      verified: false
+      id: 149429315
+      time_zone: Dublin
+      profile_background_color: '131516'
+      location: ''
+    sources_size: 1
+- !ruby/object:Twitter::Mention
+  attrs:
+    max_position: '1323450050856'
+    min_position: '1323450050856'
+    created_at: Fri Dec 09 17:00:50 +0000 2011
+    target_objects:
+    - in_reply_to_user_id: 
+      geo: 
+      coordinates: 
+      retweet_count: 0
+      favorited: false
+      in_reply_to_screen_name: 
+      in_reply_to_status_id_str: 
+      user:
+        verified: false
+        protected: false
+        screen_name: DamoclesBDA
+        following: true
+        time_zone: Dublin
+        profile_background_color: '131516'
+        url: 
+        name: Damocles
+        contributors_enabled: false
+        profile_background_tile: true
+        followers_count: 88
+        profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        default_profile_image: false
+        utc_offset: 0
+        friends_count: 82
+        profile_sidebar_fill_color: efefef
+        description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+          And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional
+          Shark Fighter]"
+        default_profile: false
+        is_translator: false
+        created_at: Sat May 29 07:50:03 +0000 2010
+        profile_sidebar_border_color: eeeeee
+        notifications: false
+        profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+        favourites_count: 0
+        lang: en
+        profile_use_background_image: true
+        follow_request_sent: false
+        statuses_count: 8146
+        geo_enabled: true
+        profile_text_color: '333333'
+        id_str: '149429315'
+        profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+        profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        id: 149429315
+        show_all_inline_media: true
+        listed_count: 11
+        profile_link_color: '009999'
+        location: ''
+      created_at: Fri Dec 09 17:00:50 +0000 2011
+      retweeted: false
+      in_reply_to_status_id: 
+      in_reply_to_user_id_str: 
+      place: 
+      truncated: false
+      source: web
+      id_str: '145186151685300224'
+      id: 145186151685300224
+      contributors: 
+      text: I'll remember this when you have momentous news to give (@Rogue_Leader,
+        @edwestonline, @goldsrobin, @lettermanr excepted)
+    target_objects_size: 1
+    targets:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 653
+      protected: false
+      profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+      screen_name: Rogue_Leader
+      default_profile_image: false
+      following: 
+      friends_count: 518
+      profile_sidebar_fill_color: e8e8e8
+      url: http://www.twitter.com/Rogue_Leader
+      name: Rogue
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 0f000f
+      description: Chinny Reckon
+      profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+      favourites_count: 117
+      default_profile: false
+      profile_use_background_image: true
+      created_at: Sun Apr 15 09:39:21 +0000 2007
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: DamoclesBDA
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: '149429315'
+        created_at: Tue Dec 13 13:29:01 +0000 2011
+        truncated: false
+        id_str: '146582398249869312'
+        contributors: 
+        place: 
+        source: <a href="http://anapewithangelglands.com" rel="nofollow">Twubes</a>
+        in_reply_to_user_id: 149429315
+        id: 146582398249869312
+        text: ! '@DamoclesBDA I''m testing the Ruby Twitter API'
+      follow_request_sent: 
+      statuses_count: 15566
+      geo_enabled: false
+      notifications: 
+      profile_text_color: '969494'
+      id_str: '4722061'
+      lang: en
+      profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+      profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+      show_all_inline_media: false
+      listed_count: 57
+      profile_link_color: 4011d9
+      verified: false
+      id: 4722061
+      time_zone: London
+      profile_background_color: 0f000f
+      location: Dangling
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: true
+      followers_count: 88
+      protected: false
+      profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      screen_name: DamoclesBDA
+      default_profile_image: false
+      following: true
+      friends_count: 82
+      profile_sidebar_fill_color: efefef
+      url: 
+      name: Damocles
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: eeeeee
+      description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+        And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional Shark
+        Fighter]"
+      default_profile: false
+      profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+      favourites_count: 0
+      profile_use_background_image: true
+      created_at: Sat May 29 07:50:03 +0000 2010
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        possibly_sensitive: false
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 15:39:14 +0000 2011
+        truncated: false
+        id_str: '146615165994016768'
+        contributors: 
+        place: 
+        source: <a href="http://twitter.com/tweetbutton" rel="nofollow">Tweet Button</a>
+        in_reply_to_user_id: 
+        id: 146615165994016768
+        text: ! '.@edwestonline defends a ''bunch of insular snobs'', from the New
+          York Times, someone has to: http://t.co/X6vHtyw9'
+      follow_request_sent: false
+      statuses_count: 8148
+      geo_enabled: true
+      notifications: false
+      profile_text_color: '333333'
+      id_str: '149429315'
+      lang: en
+      profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+      profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      show_all_inline_media: true
+      listed_count: 11
+      profile_link_color: '009999'
+      verified: false
+      id: 149429315
+      time_zone: Dublin
+      profile_background_color: '131516'
+      location: ''
+    sources_size: 1
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323446849695'
+    min_position: '1323446849695'
+    created_at: Fri Dec 09 16:07:29 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: 
+      in_reply_to_status_id_str: 
+      retweeted: false
+      in_reply_to_status_id: 
+      in_reply_to_user_id_str: 
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        screen_name: Rogue_Leader
+        default_profile_image: false
+        following: false
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 0f000f
+        description: Chinny Reckon
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        lang: en
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        verified: false
+        id: 4722061
+        time_zone: London
+        profile_background_color: 0f000f
+        location: Dangling
+      created_at: Fri Dec 09 15:10:56 +0000 2011
+      truncated: false
+      id_str: '145158493484220416'
+      contributors: 
+      place: 
+      source: web
+      in_reply_to_user_id: 
+      id: 145158493484220416
+      text: Right, packing up my desk and leaving work for the last time...
+    target_objects_size: 1
+    targets:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '145158493484220416'
+      retweeted: false
+      in_reply_to_status_id: 145158493484220416
+      in_reply_to_user_id_str: '4722061'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 68
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1554699950/We_re-Not-in-Kansas-Anymore_normal.jpg
+        screen_name: ladyditax
+        default_profile_image: false
+        following: true
+        friends_count: 163
+        profile_sidebar_fill_color: e0ff92
+        url: 
+        name: D.
+        is_translator: false
+        utc_offset: 3600
+        profile_sidebar_border_color: 87bc44
+        description: ''
+        profile_background_image_url_https: https://si0.twimg.com/images/themes/theme1/bg.png
+        favourites_count: 0
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Wed Apr 18 20:48:42 +0000 2007
+        follow_request_sent: false
+        statuses_count: 1332
+        geo_enabled: false
+        notifications: true
+        profile_text_color: '000000'
+        id_str: '5154581'
+        lang: en
+        profile_background_image_url: http://a0.twimg.com/images/themes/theme1/bg.png
+        profile_image_url_https: https://si0.twimg.com/profile_images/1554699950/We_re-Not-in-Kansas-Anymore_normal.jpg
+        show_all_inline_media: false
+        listed_count: 0
+        profile_link_color: 0000ff
+        verified: false
+        id: 5154581
+        time_zone: Madrid
+        profile_background_color: 9ae4e8
+        location: ''
+      created_at: Fri Dec 09 16:07:29 +0000 2011
+      truncated: false
+      id_str: '145172725533642752'
+      contributors: 
+      place: 
+      source: <a href="http://blackberry.com/twitter" rel="nofollow">Twitter for BlackBerry®</a>
+      in_reply_to_user_id: 4722061
+      id: 145172725533642752
+      text: ! '@Rogue_Leader Is that the popping of champagne I hear? Not terribly
+        austere, but hard earned by the sound of things.'
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 68
+      protected: false
+      profile_image_url: http://a1.twimg.com/profile_images/1554699950/We_re-Not-in-Kansas-Anymore_normal.jpg
+      screen_name: ladyditax
+      default_profile_image: false
+      following: true
+      friends_count: 163
+      profile_sidebar_fill_color: e0ff92
+      url: 
+      name: D.
+      is_translator: false
+      utc_offset: 3600
+      profile_sidebar_border_color: 87bc44
+      description: ''
+      profile_background_image_url_https: https://si0.twimg.com/images/themes/theme1/bg.png
+      favourites_count: 0
+      default_profile: false
+      profile_use_background_image: true
+      created_at: Wed Apr 18 20:48:42 +0000 2007
+      follow_request_sent: false
+      statuses_count: 1332
+      geo_enabled: false
+      notifications: true
+      profile_text_color: '000000'
+      id_str: '5154581'
+      lang: en
+      profile_background_image_url: http://a0.twimg.com/images/themes/theme1/bg.png
+      profile_image_url_https: https://si0.twimg.com/profile_images/1554699950/We_re-Not-in-Kansas-Anymore_normal.jpg
+      show_all_inline_media: false
+      listed_count: 0
+      profile_link_color: 0000ff
+      verified: false
+      id: 5154581
+      time_zone: Madrid
+      profile_background_color: 9ae4e8
+      location: ''
+    sources_size: 1
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323444298400'
+    min_position: '1323444298400'
+    created_at: Fri Dec 09 15:24:58 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: 
+      in_reply_to_status_id_str: 
+      retweeted: false
+      in_reply_to_status_id: 
+      in_reply_to_user_id_str: 
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        screen_name: Rogue_Leader
+        default_profile_image: false
+        following: false
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 0f000f
+        description: Chinny Reckon
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        lang: en
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        verified: false
+        id: 4722061
+        time_zone: London
+        profile_background_color: 0f000f
+        location: Dangling
+      created_at: Fri Dec 09 15:10:56 +0000 2011
+      truncated: false
+      id_str: '145158493484220416'
+      contributors: 
+      place: 
+      source: web
+      in_reply_to_user_id: 
+      id: 145158493484220416
+      text: Right, packing up my desk and leaving work for the last time...
+    target_objects_size: 1
+    targets:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '145158493484220416'
+      retweeted: false
+      in_reply_to_status_id: 145158493484220416
+      in_reply_to_user_id_str: '4722061'
+      user:
+        contributors_enabled: false
+        profile_background_tile: true
+        followers_count: 88
+        protected: false
+        profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        screen_name: DamoclesBDA
+        default_profile_image: false
+        following: true
+        friends_count: 82
+        profile_sidebar_fill_color: efefef
+        url: 
+        name: Damocles
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: eeeeee
+        description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+          And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional
+          Shark Fighter]"
+        profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+        favourites_count: 0
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sat May 29 07:50:03 +0000 2010
+        follow_request_sent: false
+        statuses_count: 8148
+        geo_enabled: true
+        notifications: false
+        profile_text_color: '333333'
+        id_str: '149429315'
+        lang: en
+        profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+        profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+        show_all_inline_media: true
+        listed_count: 11
+        profile_link_color: '009999'
+        verified: false
+        id: 149429315
+        time_zone: Dublin
+        profile_background_color: '131516'
+        location: ''
+      created_at: Fri Dec 09 15:24:58 +0000 2011
+      truncated: false
+      id_str: '145162024601649153'
+      contributors: 
+      place: 
+      source: web
+      in_reply_to_user_id: 4722061
+      id: 145162024601649153
+      text: ! '@Rogue_Leader Won the lottery?'
+    targets_size: 1
+    sources:
+    - contributors_enabled: false
+      profile_background_tile: true
+      followers_count: 88
+      protected: false
+      profile_image_url: http://a3.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      screen_name: DamoclesBDA
+      default_profile_image: false
+      following: true
+      friends_count: 82
+      profile_sidebar_fill_color: efefef
+      url: 
+      name: Damocles
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: eeeeee
+      description: ! "Bishop of Leinster, Universal Christian and Buddhist Church.\r\n\r\nAspire
+        And Accept.\r\n\r\nhttp://damoclesbda.wordpress.com/\r\n\r\n[Occasional Shark
+        Fighter]"
+      default_profile: false
+      profile_background_image_url_https: https://si0.twimg.com/images/themes/theme14/bg.gif
+      favourites_count: 0
+      profile_use_background_image: true
+      created_at: Sat May 29 07:50:03 +0000 2010
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        possibly_sensitive: false
+        coordinates: 
+        in_reply_to_screen_name: 
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: 
+        created_at: Tue Dec 13 15:39:14 +0000 2011
+        truncated: false
+        id_str: '146615165994016768'
+        contributors: 
+        place: 
+        source: <a href="http://twitter.com/tweetbutton" rel="nofollow">Tweet Button</a>
+        in_reply_to_user_id: 
+        id: 146615165994016768
+        text: ! '.@edwestonline defends a ''bunch of insular snobs'', from the New
+          York Times, someone has to: http://t.co/X6vHtyw9'
+      follow_request_sent: false
+      statuses_count: 8148
+      geo_enabled: true
+      notifications: false
+      profile_text_color: '333333'
+      id_str: '149429315'
+      lang: en
+      profile_background_image_url: http://a1.twimg.com/images/themes/theme14/bg.gif
+      profile_image_url_https: https://si0.twimg.com/profile_images/1443439658/SPsummer_normal.jpg
+      show_all_inline_media: true
+      listed_count: 11
+      profile_link_color: '009999'
+      verified: false
+      id: 149429315
+      time_zone: Dublin
+      profile_background_color: '131516'
+      location: ''
+    sources_size: 1
+- !ruby/object:Twitter::Reply
+  attrs:
+    max_position: '1323443468278'
+    min_position: '1323443468278'
+    created_at: Fri Dec 09 15:11:08 +0000 2011
+    target_objects:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: 
+      in_reply_to_status_id_str: 
+      retweeted: false
+      in_reply_to_status_id: 
+      in_reply_to_user_id_str: 
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 653
+        protected: false
+        profile_image_url: http://a1.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        screen_name: Rogue_Leader
+        default_profile_image: false
+        following: false
+        friends_count: 518
+        profile_sidebar_fill_color: e8e8e8
+        url: http://www.twitter.com/Rogue_Leader
+        name: Rogue
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 0f000f
+        description: Chinny Reckon
+        profile_background_image_url_https: https://si0.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        favourites_count: 117
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Sun Apr 15 09:39:21 +0000 2007
+        follow_request_sent: false
+        statuses_count: 15566
+        geo_enabled: false
+        notifications: false
+        profile_text_color: '969494'
+        id_str: '4722061'
+        lang: en
+        profile_background_image_url: http://a3.twimg.com/profile_background_images/291018357/flowerbackground_med.jpg
+        profile_image_url_https: https://si0.twimg.com/profile_images/1540895388/Pod_Cobain_normal.jpg
+        show_all_inline_media: false
+        listed_count: 57
+        profile_link_color: 4011d9
+        verified: false
+        id: 4722061
+        time_zone: London
+        profile_background_color: 0f000f
+        location: Dangling
+      created_at: Fri Dec 09 15:10:11 +0000 2011
+      truncated: false
+      id_str: '145158306351165440'
+      contributors: 
+      place: 
+      source: web
+      in_reply_to_user_id: 
+      id: 145158306351165440
+      text: It seems that Germany has once again changed the rules in its favour.
+    target_objects_size: 1
+    targets:
+    - retweet_count: 0
+      favorited: false
+      geo: 
+      coordinates: 
+      in_reply_to_screen_name: Rogue_Leader
+      in_reply_to_status_id_str: '145158306351165440'
+      retweeted: false
+      in_reply_to_status_id: 145158306351165440
+      in_reply_to_user_id_str: '4722061'
+      user:
+        contributors_enabled: false
+        profile_background_tile: false
+        followers_count: 398
+        protected: false
+        profile_image_url: http://a0.twimg.com/profile_images/1304533437/Picture0027_normal.jpg
+        screen_name: keewa
+        default_profile_image: false
+        following: true
+        friends_count: 833
+        profile_sidebar_fill_color: 95E8EC
+        url: http://soundcloud.com/keewa
+        name: Oliver Kealey
+        is_translator: false
+        utc_offset: 0
+        profile_sidebar_border_color: 5ED4DC
+        description: ! "Musician, Nerd, Future Sound Designer.\r\nhttp://keewa.wordpress.com"
+        profile_background_image_url_https: https://si0.twimg.com/images/themes/theme4/bg.gif
+        favourites_count: 18
+        default_profile: false
+        profile_use_background_image: true
+        created_at: Fri Mar 27 17:36:55 +0000 2009
+        follow_request_sent: false
+        statuses_count: 10003
+        geo_enabled: false
+        notifications: false
+        profile_text_color: 3C3940
+        id_str: '27053333'
+        lang: en
+        profile_background_image_url: http://a1.twimg.com/images/themes/theme4/bg.gif
+        profile_image_url_https: https://si0.twimg.com/profile_images/1304533437/Picture0027_normal.jpg
+        show_all_inline_media: false
+        listed_count: 9
+        profile_link_color: 0099B9
+        verified: false
+        id: 27053333
+        time_zone: London
+        profile_background_color: 0099B9
+        location: Derby, UK
+      created_at: Fri Dec 09 15:11:08 +0000 2011
+      truncated: false
+      id_str: '145158542851178496'
+      contributors: 
+      place: 
+      source: <a href="https://chrome.google.com/extensions/detail/encaiiljifbdbjlphpgpiimidegddhic"
+        rel="nofollow">Silver Bird</a>
+      in_reply_to_user_id: 4722061
+      id: 145158542851178496
+      text: ! '@Rogue_Leader Cameron''s doing a brilliant job of fucking it up for
+        all of us, too. Not usually a good idea to piss off biggest traders.'
+    targets_size: 1
+    sources:
+    - default_profile: false
+      contributors_enabled: false
+      profile_background_tile: false
+      followers_count: 398
+      protected: false
+      profile_image_url: http://a0.twimg.com/profile_images/1304533437/Picture0027_normal.jpg
+      screen_name: keewa
+      default_profile_image: false
+      following: true
+      friends_count: 833
+      profile_sidebar_fill_color: 95E8EC
+      url: http://soundcloud.com/keewa
+      name: Oliver Kealey
+      is_translator: false
+      utc_offset: 0
+      profile_sidebar_border_color: 5ED4DC
+      description: ! "Musician, Nerd, Future Sound Designer.\r\nhttp://keewa.wordpress.com"
+      profile_background_image_url_https: https://si0.twimg.com/images/themes/theme4/bg.gif
+      favourites_count: 18
+      profile_use_background_image: true
+      created_at: Fri Mar 27 17:36:55 +0000 2009
+      status:
+        retweet_count: 0
+        favorited: false
+        geo: 
+        coordinates: 
+        in_reply_to_screen_name: JoelTaylorMetro
+        in_reply_to_status_id_str: 
+        retweeted: false
+        in_reply_to_status_id: 
+        in_reply_to_user_id_str: '381192433'
+        created_at: Mon Dec 12 13:36:04 +0000 2011
+        truncated: false
+        id_str: '146221781454303234'
+        contributors: 
+        place: 
+        source: <a href="https://chrome.google.com/extensions/detail/encaiiljifbdbjlphpgpiimidegddhic"
+          rel="nofollow">Silver Bird</a>
+        in_reply_to_user_id: 381192433
+        id: 146221781454303234
+        text: ! '@JoelTaylorMetro "They said our heinous atrocity was worse than it
+          was"'
+      follow_request_sent: false
+      statuses_count: 10003
+      geo_enabled: false
+      notifications: false
+      profile_text_color: 3C3940
+      id_str: '27053333'
+      lang: en
+      profile_background_image_url: http://a1.twimg.com/images/themes/theme4/bg.gif
+      profile_image_url_https: https://si0.twimg.com/profile_images/1304533437/Picture0027_normal.jpg
+      show_all_inline_media: false
+      listed_count: 9
+      profile_link_color: 0099B9
+      verified: false
+      id: 27053333
+      time_zone: London
+      profile_background_color: 0099B9
+      location: Derby, UK
+    sources_size: 1
