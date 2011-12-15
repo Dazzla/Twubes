@@ -4,15 +4,23 @@
 require 'rubygems'
 require 'twitter'
 require 'twitter_auth'
+require 'yaml'
 
 TOTAL_TWEET_LENGTH = 140
 
 def send_tweet(user, tweet)
 
+  keys = YAML.load_file("./auth/twitter_keys.yaml")
+
+  consumer_key = keys[user]["consumer_key"]
+  oauth_token = keys[user]["access_token"]
+
+  oauth_token_secret = keys[user]["token_secret"]
+  consumer_secret = keys[user]["consumer_secret"]
 
   session = Session.new
 
-  session.authenticate(user)
+  session.authenticate(user, consumer_key, oauth_token, oauth_token_secret, consumer_secret)
 
   overtweet = (tweet.length - 140)
 
