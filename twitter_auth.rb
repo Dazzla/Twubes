@@ -1,8 +1,8 @@
 #!/usr/bin/ruby
 
-class Authenticate
+class   Session
 
-  def login(user)
+  def authenticate(user)
     require 'rubygems'
     require 'twitter'
     require 'yaml'

@@ -5,22 +5,26 @@ require 'rubygems'
 require 'twitter'
 require 'twitter_auth'
 
-def sendtweet(user, tweet)
+TOTAL_TWEET_LENGTH = 140
 
-  session = Authenticate.new
+def send_tweet(user, tweet)
 
-  session.login(user)
 
-  message = tweet
+  session = Session.new
 
-  overtweet = (message.length - 140)
+  session.authenticate(user)
+
+  overtweet = (tweet.length - 140)
 
   if overtweet < 1
-    Twitter.update(message)
+    Twitter.update(tweet)
   else
-    $stdout.puts "Message too long by #{overtweet} char(s) (message length = #{message.length} chars)"
+    $stdout.puts "Tweet too long by #{overtweet} char(s) (tweet length = #{tweet.length} chars)"
   end
 
 end
 
-sendtweet(ARGV[0], ARGV[1])
+user = ARGV[0].downcase
+tweet = ARGV[1]
+
+send_tweet(user, tweet)
