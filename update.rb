@@ -29,8 +29,7 @@ require 'twitter_auth'
     elsif tweet == last_tweet
       $stdout.puts "Duplicate of previous tweet (#{last_tweet}). Not sent."
     else
-       Twitter.update(tweet)
-
+      response = Twitter.update(tweet)
       #File.open("tweet_status", "w") {|file| file << status}
    end
 
