@@ -1,51 +1,44 @@
 #!/usr/bin/ruby
 
-
+class TweetUpdate
+  
 require 'rubygems'
 require 'twitter'
 require 'twitter_auth'
-require 'yaml'
 
-TOTAL_TWEET_LENGTH = 140
+  TWEET_LENGTH_LIMIT = 140
 
-#Use Session object to authenticate given account with Twitter.
-def authenticate(user)
-  keys = YAML.load_file("./auth/twitter_keys.yaml")
+  def initialize(user)
+    
+    @session = Session.new(user)
+    @session.authenticate()
+    
+  end
 
-  consumer_key = keys[user]["consumer_key"]
-  oauth_token = keys[user]["access_token"]
+  #Collect user name, call authentication and send tweet.
+  def send_tweet(user, tweet)
+  
+    #Prevent duplicate tweets from sending.
+    last_tweet = Twitter.user_timeline(user).first.text
+  
+    #Catch over-length tweets before they're sent to Twitter.
+    overtweet = (tweet.length - TWEET_LENGTH_LIMIT)
+    
+    if overtweet > 0
+      $stdout.puts "Tweet too long by #{overtweet} char(s) (tweet length = #{tweet.length} chars)"
+    elsif tweet == last_tweet
+      $stdout.puts "Duplicate of previous tweet (#{last_tweet}). Not sent."
+    else
+       Twitter.update(tweet)
 
-  oauth_token_secret = keys[user]["token_secret"]
-  consumer_secret = keys[user]["consumer_secret"]
+      #File.open("tweet_status", "w") {|file| file << status}
+   end
 
-  session = Session.new
-
-  session.authenticate(user, consumer_key, oauth_token, oauth_token_secret, consumer_secret)
-end
-
-
-#Collect user name, call authentication and send tweet.
-def send_tweet(user, tweet)
-
-  authenticate(user)
-
-  #Prevent duplicate tweets from sending.
-  lasttweet = Twitter.user_timeline(user).first.text
-
-  #Catch over-length tweets before they're sent to Twitter.
-  overtweet = (tweet.length - 140)
-  if overtweet > 0
-    $stdout.puts "Tweet too long by #{overtweet} char(s) (tweet length = #{tweet.length} chars)"
-  elsif tweet == lasttweet
-    $stdout.puts "Duplicate of previous tweet. Not sent."
-  else
-    Twitter.update(tweet)
   end
 
 end
-
 #Test from command-line
-user = ARGV[0].downcase
-tweet = ARGV[1]
+#user = ARGV[0].downcase
+#tweet = ARGV[1]
 
-send_tweet(user, tweet)
+#send_tweet(user, tweet)
