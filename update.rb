@@ -8,9 +8,9 @@ require 'twitter_auth'
 
   TWEET_LENGTH_LIMIT = 140
 
-  def initialize(user)
+  def initialize(user, project)
     
-    @session = Session.new(user)
+    @session = Session.new(user, project)
     @session.authenticate()
     
   end
@@ -30,7 +30,10 @@ require 'twitter_auth'
       $stdout.puts "Duplicate of previous tweet (#{last_tweet}). Not sent."
     else
       response = Twitter.update(tweet)
-      #File.open("tweet_status", "w") {|file| file << status}
+  
+      
+      
+      File.open("tweet_status", "w") {|file| file << response.inspect}
    end
 
   end

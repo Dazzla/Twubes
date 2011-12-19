@@ -7,9 +7,13 @@ class GetRateLimit
   require 'twitter'
   require 'twitter_auth'
   
-  def initialize(user)
+  
+  def initialize(user, project)
     @user = user.to_s
-    session = Session.new(@user)
+    @project = project.to_s
+    
+    
+    session = Session.new(@user, @project)
     session.authenticate()
   end  
   
