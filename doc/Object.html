@@ -47,7 +47,9 @@
     <nav id="file-list-section" class="section">
   <h3 class="section-header">Defined In</h3>
   <ul>
-    <li>get_rate_limit.rb
+    <li>broken/oauth.rb
+    <li>broken/twitter_open_auth.rb
+    <li>tests.rb
   </ul>
 </nav>
 
@@ -72,17 +74,32 @@
     
     <li><a href="#method-i-get_rate_limit">#get_rate_limit</a>
     
+    <li><a href="#method-i-oauth">#oauth</a>
+    
+    <li><a href="#method-i-send_update">#send_update</a>
+    
   </ul>
 </nav>
 
   </div>
 
   <div id="project-metadata">
-    
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./tweet_status.html">tweet_status</a>
+  
+  </ul>
+</nav>
+
     <nav id="classindex-section" class="section project-section">
   <h3 class="section-header">Class and Module Index</h3>
 
   <ul class="link-list">
+  
+    <li><a href="./GetRateLimit.html">GetRateLimit</a>
   
     <li><a href="./Object.html">Object</a>
   
@@ -112,6 +129,19 @@
     
 
     
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="CONSUMER_KEY">CONSUMER_KEY
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
 
     
 
@@ -125,7 +155,7 @@
         
         <div class="method-heading">
           <span class="method-name">get_rate_limit</span><span
-            class="method-args">(user)</span>
+            class="method-args">(user, project)</span>
           <span class="method-click-advice">click to toggle source</span>
         </div>
         
@@ -137,18 +167,10 @@
 
           
           <div class="method-source-code" id="get_rate_limit-source">
-            <pre><span class="ruby-comment"># File get_rate_limit.rb, line 7</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_rate_limit</span>(<span class="ruby-identifier">user</span>)
-  
-  <span class="ruby-identifier">user</span> = <span class="ruby-identifier">user</span>.<span class="ruby-identifier">to_s</span>
-  <span class="ruby-identifier">session</span> = <span class="ruby-constant">Session</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user</span>)
-
-  <span class="ruby-identifier">session</span>.<span class="ruby-identifier">authenticate</span>()
-
-  <span class="ruby-identifier">rl_remaining</span> = <span class="ruby-constant">Twitter</span>.<span class="ruby-identifier">rate_limit_status</span>.<span class="ruby-identifier">remaining_hits</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot; Twitter API request(s) remaining this hour for #{user}&quot;</span>
-
-  <span class="ruby-identifier">$stdout</span>.<span class="ruby-identifier">puts</span> <span class="ruby-identifier">rl_remaining</span>
-
+            <pre><span class="ruby-comment"># File tests.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_rate_limit</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
+  <span class="ruby-identifier">limit</span> = <span class="ruby-constant">GetRateLimit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
+  <span class="ruby-identifier">limit</span>.<span class="ruby-identifier">get</span>()
 <span class="ruby-keyword">end</span></pre>
           </div><!-- get_rate_limit-source -->
           
@@ -158,6 +180,92 @@
 
         
       </div><!-- get_rate_limit-method -->
+
+    
+      <div id="method-i-oauth" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">oauth</span><span
+            class="method-args">(project)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="oauth-source">
+            <pre><span class="ruby-comment"># File broken/oauth.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">oauth</span>(<span class="ruby-identifier">project</span>)
+
+  <span class="ruby-ivar">@keys</span> = <span class="ruby-constant">YAML</span>.<span class="ruby-identifier">load_file</span>(<span class="ruby-string">&quot;./auth/twitter_keys.yaml&quot;</span>)
+
+  <span class="ruby-ivar">@project</span> = <span class="ruby-identifier">project</span>
+
+
+  <span class="ruby-ivar">@callback</span>           =   <span class="ruby-ivar">@keys</span>[<span class="ruby-string">&quot;system&quot;</span>][<span class="ruby-string">&quot;callback_url&quot;</span>]
+  <span class="ruby-ivar">@consumer_key</span>       =   <span class="ruby-ivar">@keys</span>[<span class="ruby-string">&quot;project&quot;</span>][<span class="ruby-ivar">@project</span>][<span class="ruby-string">&quot;consumer_key&quot;</span>]
+  <span class="ruby-ivar">@consumer_secret</span>    =   <span class="ruby-ivar">@keys</span>[<span class="ruby-string">&quot;project&quot;</span>][<span class="ruby-ivar">@project</span>][<span class="ruby-string">&quot;consumer_secret&quot;</span>]
+
+  <span class="ruby-identifier">puts</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-ivar">@consumer_key</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-ivar">@consumer_secret</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-value">:site</span>
+  <span class="ruby-identifier">puts</span>
+
+  <span class="ruby-ivar">@consumer</span> = <span class="ruby-constant">OAuth</span><span class="ruby-operator">::</span><span class="ruby-constant">Consumer</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@consumer_key</span>, <span class="ruby-ivar">@consumer_secret</span>, <span class="ruby-value">:site</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;http://127.0.0.1/&quot;</span>)
+  <span class="ruby-ivar">@request_token</span> = <span class="ruby-ivar">@consumer</span>.<span class="ruby-identifier">get_request_token</span>()
+  <span class="ruby-identifier">puts</span> <span class="ruby-ivar">@request_token</span>.<span class="ruby-identifier">authorize_url</span>
+  <span class="ruby-comment">#session[:request_token] = @request_token</span>
+
+<span class="ruby-comment">  redirect_to @request_token.authorize_url(:oauth_callback =&gt; @callback_url)
+
+  @access_token = @request_token.get_access_token
+  @photos = @access_token.get('/photos.xml')
+</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- oauth-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- oauth-method -->
+
+    
+      <div id="method-i-send_update" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">send_update</span><span
+            class="method-args">(user, tweet, project)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="send_update-source">
+            <pre><span class="ruby-comment"># File tests.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">send_update</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">tweet</span>, <span class="ruby-identifier">project</span>)
+  <span class="ruby-identifier">new_tweet</span> = <span class="ruby-constant">TweetUpdate</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
+  <span class="ruby-identifier">new_tweet</span>.<span class="ruby-identifier">send_tweet</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">tweet</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- send_update-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- send_update-method -->
 
     
     </section><!-- public-instance-method-details -->

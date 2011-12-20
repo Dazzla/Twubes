@@ -34,7 +34,7 @@ require 'twitter_auth'
       
       
       File.open("tweet_status", "w") {|file| file << response.inspect}
-   end
+    end
 
   end
 

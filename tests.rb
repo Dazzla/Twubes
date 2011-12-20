@@ -18,12 +18,10 @@ end
 user    = ARGV[0]
 message = ARGV[1]
 project = ARGV[2]
+mode = ARGV[3]
 
-puts "tests.rb"
-puts user
-puts message
-puts project
-puts
+if mode == "update"
+  send_update(user, message, project)
+end
 
 get_rate_limit(user, project)
-send_update(user, message, project)
