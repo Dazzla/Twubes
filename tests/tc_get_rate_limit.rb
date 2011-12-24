@@ -6,23 +6,33 @@ require 'test/unit'
 require 'twitter_auth'
 require 'get_rate_limit'
 
-class TestGetRateLimit
+class TestGetRateLimit < Test::Unit::TestCase
 
   def setup
+
     @user = "twubes"
     @project = "4978_project"
+    @conf_file_path = "../auth/"
 
-    @test_session = Session.new(@user, @project)
-    @test_auth = @test_session.authenticate
-    @get_limit = GetRateLimit.new(@user, @project)
-    @get = @get_limit.get
+    @get_limit = GetRateLimit.new(@user, @project, @conf_file_path)
 
   end
 
+  
+  def test_params
+
+    assert_equal(@user, GetRateLimit.new(@user, @project, @conf_file_path).user)
+    assert_equal(@project, GetRateLimit.new(@user, @project, @conf_file_path).project)
+
+  end
+
+
   def test_get_rate_limit
 
+    @limit_message = @get_limit.get
+
     assert_respond_to(@get_limit, :get)
-    assert_respond_to(@get, :reverse)
+    assert_respond_to(@limit_message, :reverse)
 
   end
 

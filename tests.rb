@@ -20,7 +20,8 @@ end
 def get_rate_limit(user, project)
 
   get_limit = GetRateLimit.new(user, project)
-  get_limit.get()
+  puts get_limit.get()
+
 end
 
 mode = ARGV[0]

@@ -15,12 +15,14 @@ class TestSession < Test::Unit::TestCase
 
   end
 
+
   def test_basic_instantiation
 
     assert_respond_to(@test_session, :authenticate)
-    assert_equal("./auth/twitter_keys.yaml", @test_session.auth_file)
+    assert_equal("../auth/twitter_keys.yaml", @test_session.auth_file)
 
   end
+
 
   def test_authentication
 
