@@ -9,20 +9,20 @@ Provides authentication and session managment methods for API requests
   require 'rubygems'
   require 'twitter'
 
-  CONF_FILE_PATH      =   "./auth/"
-  @@auth_file         =   CONF_FILE_PATH+"twitter_keys.yaml"
-
+  attr_accessor :auth_file
 
   def initialize(user, project)
 
-    @keys = YAML.load_file(@@auth_file)
 
-    @consumer_key       =   @keys["project"][project]["consumer_key"]
-    @consumer_secret    =   @keys["project"][project]["consumer_secret"]
+    @user = user.downcase
+    @project = project.downcase
 
-    @oauth_token        =   @keys["user"][user]["access_token"]
-    @oauth_token_secret =   @keys["user"][user]["token_secret"]
+    @conf_file_path = "./auth/"
+    @conf_file = "twitter_keys.yaml"
 
+    @auth_file         =   @conf_file_path+@conf_file
+
+    @keys = YAML.load_file(@auth_file)
 
   end
 

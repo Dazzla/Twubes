@@ -7,6 +7,11 @@ require 'twitter'
 require 'twitter_auth'
 
   TWEET_LENGTH_LIMIT = 140
+  
+  #attr_accessor :user, :project
+  
+  #user = :user
+  #project = :project
 
   def initialize(user, project)
     
@@ -25,22 +30,22 @@ require 'twitter_auth'
     overtweet = (tweet.length - TWEET_LENGTH_LIMIT)
     
     if overtweet > 0
+      
       $stdout.puts "Tweet too long by #{overtweet} char(s) (tweet length = #{tweet.length} chars)"
+    
     elsif tweet == last_tweet
+      
       $stdout.puts "Duplicate of previous tweet (#{last_tweet}). Not sent."
+      
     else
+    
       response = Twitter.update(tweet)
-  
+      tweet_text = response.text
+      user = response.user["screen_name"]
+      puts "Tweet '#{tweet_text}' from user #{user} sent"
       
-      
-      File.open("tweet_status", "w") {|file| file << response.inspect}
     end
-
+    
   end
 
 end
-#Test from command-line
-#user = ARGV[0].downcase
-#tweet = ARGV[1]
-
-#send_tweet(user, tweet)
