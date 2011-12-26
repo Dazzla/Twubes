@@ -105,6 +105,12 @@
   
     <li><a href="./Session.html">Session</a>
   
+    <li><a href="./TestGetRateLimit.html">TestGetRateLimit</a>
+  
+    <li><a href="./TestSession.html">TestSession</a>
+  
+    <li><a href="./TestUpdate.html">TestUpdate</a>
+  
     <li><a href="./TweetUpdate.html">TweetUpdate</a>
   
   </ul>
@@ -167,10 +173,12 @@
 
           
           <div class="method-source-code" id="get_rate_limit-source">
-            <pre><span class="ruby-comment"># File tests.rb, line 13</span>
+            <pre><span class="ruby-comment"># File tests.rb, line 17</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">get_rate_limit</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
-  <span class="ruby-identifier">limit</span> = <span class="ruby-constant">GetRateLimit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
-  <span class="ruby-identifier">limit</span>.<span class="ruby-identifier">get</span>()
+
+  <span class="ruby-identifier">get_limit</span> = <span class="ruby-constant">GetRateLimit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">get_limit</span>.<span class="ruby-identifier">get</span>()
+
 <span class="ruby-keyword">end</span></pre>
           </div><!-- get_rate_limit-source -->
           
@@ -241,7 +249,7 @@
         
         <div class="method-heading">
           <span class="method-name">send_update</span><span
-            class="method-args">(user, tweet, project)</span>
+            class="method-args">(user, project, tweet)</span>
           <span class="method-click-advice">click to toggle source</span>
         </div>
         
@@ -253,10 +261,13 @@
 
           
           <div class="method-source-code" id="send_update-source">
-            <pre><span class="ruby-comment"># File tests.rb, line 8</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">send_update</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">tweet</span>, <span class="ruby-identifier">project</span>)
+            <pre><span class="ruby-comment"># File tests.rb, line 9</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">send_update</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>, <span class="ruby-identifier">tweet</span>)
+
+
   <span class="ruby-identifier">new_tweet</span> = <span class="ruby-constant">TweetUpdate</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
   <span class="ruby-identifier">new_tweet</span>.<span class="ruby-identifier">send_tweet</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">tweet</span>)
+
 <span class="ruby-keyword">end</span></pre>
           </div><!-- send_update-source -->
           
