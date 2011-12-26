@@ -101,6 +101,12 @@
   
     <li><a href="./Session.html">Session</a>
   
+    <li><a href="./TestGetRateLimit.html">TestGetRateLimit</a>
+  
+    <li><a href="./TestSession.html">TestSession</a>
+  
+    <li><a href="./TestUpdate.html">TestUpdate</a>
+  
     <li><a href="./TweetUpdate.html">TweetUpdate</a>
   
   </ul>
@@ -140,6 +146,39 @@
     
 
     
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-project" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">project</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-user" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">user</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
 
     <!-- Methods -->
     
@@ -163,12 +202,15 @@
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File update.rb, line 11</span>
+            <pre><span class="ruby-comment"># File update.rb, line 14</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
-  
-  <span class="ruby-ivar">@session</span> = <span class="ruby-constant">Session</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
-  <span class="ruby-ivar">@session</span>.<span class="ruby-identifier">authenticate</span>()
-  
+
+  <span class="ruby-ivar">@user</span> = <span class="ruby-identifier">user</span>
+  <span class="ruby-ivar">@project</span> = <span class="ruby-identifier">project</span>
+
+  <span class="ruby-identifier">session</span> = <span class="ruby-constant">Session</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
+  <span class="ruby-identifier">session</span>.<span class="ruby-identifier">authenticate</span>()
+
 <span class="ruby-keyword">end</span></pre>
           </div><!-- new-source -->
           
@@ -202,7 +244,7 @@
 
           
           <div class="method-source-code" id="send_tweet-source">
-            <pre><span class="ruby-comment"># File update.rb, line 19</span>
+            <pre><span class="ruby-comment"># File update.rb, line 25</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">send_tweet</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">tweet</span>)
 
   <span class="ruby-comment">#Prevent duplicate tweets from sending.</span>
@@ -210,17 +252,22 @@
 
   <span class="ruby-comment">#Catch over-length tweets before they're sent to Twitter.</span>
   <span class="ruby-identifier">overtweet</span> = (<span class="ruby-identifier">tweet</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> <span class="ruby-constant">TWEET_LENGTH_LIMIT</span>)
-  
-  <span class="ruby-keyword">if</span> <span class="ruby-identifier">overtweet</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
-    <span class="ruby-identifier">$stdout</span>.<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Tweet too long by #{overtweet} char(s) (tweet length = #{tweet.length} chars)&quot;</span>
-  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">tweet</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">last_tweet</span>
-    <span class="ruby-identifier">$stdout</span>.<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Duplicate of previous tweet (#{last_tweet}). Not sent.&quot;</span>
-  <span class="ruby-keyword">else</span>
-    <span class="ruby-identifier">response</span> = <span class="ruby-constant">Twitter</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">tweet</span>)
 
-    
-    
-    <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-string">&quot;tweet_status&quot;</span>, <span class="ruby-string">&quot;w&quot;</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">file</span><span class="ruby-operator">|</span> <span class="ruby-identifier">file</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">response</span>.<span class="ruby-identifier">inspect</span>}
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">overtweet</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+
+    <span class="ruby-identifier">$stdout</span>.<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Tweet too long by #{overtweet} char(s) (tweet length = #{tweet.length} chars)&quot;</span>
+
+  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">tweet</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">last_tweet</span>
+
+    <span class="ruby-identifier">$stdout</span>.<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Duplicate of previous tweet (#{last_tweet}). Not sent.&quot;</span>
+
+  <span class="ruby-keyword">else</span>
+
+    <span class="ruby-identifier">response</span> = <span class="ruby-constant">Twitter</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">tweet</span>)
+    <span class="ruby-identifier">tweet_text</span> = <span class="ruby-identifier">response</span>.<span class="ruby-identifier">text</span>
+    <span class="ruby-identifier">user</span> = <span class="ruby-identifier">response</span>.<span class="ruby-identifier">user</span>[<span class="ruby-string">&quot;screen_name&quot;</span>]
+    <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Tweet '#{tweet_text}' from user #{user} sent&quot;</span>
+
   <span class="ruby-keyword">end</span>
 
 <span class="ruby-keyword">end</span></pre>

@@ -14,15 +14,15 @@ class TestGetRateLimit < Test::Unit::TestCase
     @project = "4978_project"
     @conf_file_path = "../auth/"
 
-    @get_limit = GetRateLimit.new(@user, @project, @conf_file_path)
+    @get_limit = GetRateLimit.new(@user, @project)
 
   end
 
-  
+
   def test_params
 
-    assert_equal(@user, GetRateLimit.new(@user, @project, @conf_file_path).user)
-    assert_equal(@project, GetRateLimit.new(@user, @project, @conf_file_path).project)
+    assert_equal(@user, GetRateLimit.new(@user, @project).user)
+    assert_equal(@project, GetRateLimit.new(@user, @project).project)
 
   end
 

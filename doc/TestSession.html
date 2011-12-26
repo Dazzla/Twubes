@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>Class: TestSession</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>tests/tc_twitter_auth.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Test::Unit::TestCase
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-setup">#setup</a>
+    
+    <li><a href="#method-i-test_authentication">#test_authentication</a>
+    
+    <li><a href="#method-i-test_basic_instantiation">#test_basic_instantiation</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./tweet_status.html">tweet_status</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./GetRateLimit.html">GetRateLimit</a>
+  
+    <li><a href="./Object.html">Object</a>
+  
+    <li><a href="./Session.html">Session</a>
+  
+    <li><a href="./TestGetRateLimit.html">TestGetRateLimit</a>
+  
+    <li><a href="./TestSession.html">TestSession</a>
+  
+    <li><a href="./TestUpdate.html">TestUpdate</a>
+  
+    <li><a href="./TweetUpdate.html">TweetUpdate</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class TestSession</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-setup" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">setup</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="setup-source">
+            <pre><span class="ruby-comment"># File tests/tc_twitter_auth.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">setup</span>
+
+  <span class="ruby-ivar">@test_session</span> = <span class="ruby-constant">Session</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;twubes&quot;</span>, <span class="ruby-string">&quot;4978_project&quot;</span>)
+  <span class="ruby-ivar">@test_auth</span> = <span class="ruby-ivar">@test_session</span>.<span class="ruby-identifier">authenticate</span>
+
+  <span class="ruby-ivar">@auth_file</span>         =   <span class="ruby-string">'/Users/Dazzla/Dropbox/src/ruby/projects/Twitter/Twubes/auth/twitter_keys.yaml'</span>
+
+  <span class="ruby-ivar">@keys</span> = <span class="ruby-constant">YAML</span>.<span class="ruby-identifier">load_file</span>(<span class="ruby-ivar">@auth_file</span>)
+
+  <span class="ruby-ivar">@consumer_key</span>       =   <span class="ruby-ivar">@keys</span>[<span class="ruby-string">&quot;project&quot;</span>][<span class="ruby-string">&quot;4978_project&quot;</span>][<span class="ruby-string">&quot;consumer_key&quot;</span>]
+  <span class="ruby-ivar">@consumer_secret</span>    =   <span class="ruby-ivar">@keys</span>[<span class="ruby-string">&quot;project&quot;</span>][<span class="ruby-string">&quot;4978_project&quot;</span>][<span class="ruby-string">&quot;consumer_secret&quot;</span>]
+
+  <span class="ruby-ivar">@oauth_token</span>        =   <span class="ruby-ivar">@keys</span>[<span class="ruby-string">&quot;user&quot;</span>][<span class="ruby-string">&quot;twubes&quot;</span>][<span class="ruby-string">&quot;access_token&quot;</span>]
+  <span class="ruby-ivar">@oauth_token_secret</span> =   <span class="ruby-ivar">@keys</span>[<span class="ruby-string">&quot;user&quot;</span>][<span class="ruby-string">&quot;twubes&quot;</span>][<span class="ruby-string">&quot;token_secret&quot;</span>]
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- setup-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- setup-method -->
+
+    
+      <div id="method-i-test_authentication" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_authentication</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_authentication-source">
+            <pre><span class="ruby-comment"># File tests/tc_twitter_auth.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_authentication</span>
+
+  <span class="ruby-identifier">assert_respond_to</span>(<span class="ruby-ivar">@test_auth</span>, <span class="ruby-value">:oauth_token</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@consumer_key</span>,       <span class="ruby-ivar">@test_auth</span>.<span class="ruby-identifier">consumer_key</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@consumer_secret</span>,    <span class="ruby-ivar">@test_auth</span>.<span class="ruby-identifier">consumer_secret</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@oauth_token</span>,         <span class="ruby-ivar">@test_auth</span>.<span class="ruby-identifier">oauth_token</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@oauth_token_secret</span>,  <span class="ruby-ivar">@test_auth</span>.<span class="ruby-identifier">oauth_token_secret</span>)
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_authentication-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_authentication-method -->
+
+    
+      <div id="method-i-test_basic_instantiation" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_basic_instantiation</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_basic_instantiation-source">
+            <pre><span class="ruby-comment"># File tests/tc_twitter_auth.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_basic_instantiation</span>
+
+  <span class="ruby-identifier">assert_respond_to</span>(<span class="ruby-ivar">@test_session</span>, <span class="ruby-value">:authenticate</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&quot;twubes&quot;</span>, <span class="ruby-ivar">@test_session</span>.<span class="ruby-identifier">user</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&quot;4978_project&quot;</span>, <span class="ruby-ivar">@test_session</span>.<span class="ruby-identifier">project</span>)
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_basic_instantiation-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_basic_instantiation-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.11.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+
