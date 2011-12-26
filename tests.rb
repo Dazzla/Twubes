@@ -6,11 +6,8 @@ require 'twitter'
 require 'get_rate_limit'
 
 
-def send_update(user, tweet, project)
+def send_update(user, project, tweet)
 
-  puts user
-  puts tweet
-  puts project
 
   new_tweet = TweetUpdate.new(user, project)
   new_tweet.send_tweet(user, tweet)
@@ -27,12 +24,12 @@ end
 mode = ARGV[0]
 user    = ARGV[1]
 project = ARGV[2]
-message = ARGV[3]
+tweet = ARGV[3]
 
 
 
 if mode == "update"
-  send_update(user, message, project)
+  send_update(user, project, tweet)
   get_rate_limit(user, project)
 end
 

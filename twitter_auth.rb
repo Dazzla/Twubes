@@ -9,8 +9,8 @@ Provides authentication and session managment methods for API requests
   require 'rubygems'
   require 'twitter'
 
-  attr_writer :conf_file_path
   attr_reader :auth_file
+  attr_accessor:user, :project
 
   def initialize(user, project)
 
@@ -21,7 +21,11 @@ Provides authentication and session managment methods for API requests
 
     @keys = YAML.load_file(@auth_file)
 
-    puts
+    @consumer_key       =   @keys["project"][project]["consumer_key"]
+    @consumer_secret    =   @keys["project"][project]["consumer_secret"]
+
+    @oauth_token        =   @keys["user"][user]["access_token"]
+    @oauth_token_secret =   @keys["user"][user]["token_secret"]
 
   end
 
@@ -36,7 +40,6 @@ Provides authentication and session managment methods for API requests
       config.consumer_secret      =   @consumer_secret
 
     end
-
 
   end
 

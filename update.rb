@@ -2,19 +2,22 @@
 
 class TweetUpdate
 
-require 'rubygems'
-require 'twitter'
-require 'twitter_auth'
+  require 'rubygems'
+  require 'twitter'
+  require 'twitter_auth'
 
   TWEET_LENGTH_LIMIT = 140
 
-  #attr_accessor :user, :project
+  attr_accessor :user, :project
 
 
   def initialize(user, project)
 
-    @session = Session.new(user, project)
-    @session.authenticate()
+    @user = user
+    @project = project
+
+    session = Session.new(user, project)
+    session.authenticate()
 
   end
 

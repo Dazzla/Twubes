@@ -2,21 +2,23 @@
 
 class GetRateLimit
 
-
   require 'rubygems'
   require 'twitter'
   require 'twitter_auth'
 
-  attr_accessor :user, :project
-  attr_writer :conf_file_path
+
+  attr_accessor :user, :project, :conf_file_path
 
 
-  def initialize(user, project, conf_file_path="./auth/")
+  def initialize(user, project)
 
     @user = user
     @project = project
 
-    session = Session.new(user, project, conf_file_path)
+    puts @user
+    puts @project
+
+    session = Session.new(user, project)
     session.authenticate()
 
   end
@@ -25,7 +27,7 @@ class GetRateLimit
   def get()
 
     rl_remaining =
-      Twitter.rate_limit_status.remaining_hits.to_s + " Twitter API request(s) remaining this hour for #{@user}. using #{project}"
+      Twitter.rate_limit_status.remaining_hits.to_s + " Twitter API request(s) remaining this hour for #{@user}, using #{project}"
   end
 
 end
