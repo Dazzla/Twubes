@@ -164,6 +164,19 @@
         </div>
       </div>
       
+      <div id="attribute-i-tweet" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">tweet</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
       <div id="attribute-i-user" class="method-detail">
         <div class="method-heading attribute-method-heading">
           <span class="method-name">user</span><span
@@ -248,25 +261,27 @@
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">send_tweet</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">tweet</span>)
 
   <span class="ruby-comment">#Prevent duplicate tweets from sending.</span>
-  <span class="ruby-identifier">last_tweet</span> = <span class="ruby-constant">Twitter</span>.<span class="ruby-identifier">user_timeline</span>(<span class="ruby-identifier">user</span>).<span class="ruby-identifier">first</span>.<span class="ruby-identifier">text</span>
+  <span class="ruby-ivar">@tweet</span> = <span class="ruby-identifier">tweet</span>
+
+  <span class="ruby-ivar">@last_tweet</span> = <span class="ruby-constant">Twitter</span>.<span class="ruby-identifier">user_timeline</span>(<span class="ruby-ivar">@user</span>).<span class="ruby-identifier">first</span>.<span class="ruby-identifier">text</span>
 
   <span class="ruby-comment">#Catch over-length tweets before they're sent to Twitter.</span>
-  <span class="ruby-identifier">overtweet</span> = (<span class="ruby-identifier">tweet</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> <span class="ruby-constant">TWEET_LENGTH_LIMIT</span>)
+  <span class="ruby-identifier">overtweet</span> = (<span class="ruby-ivar">@tweet</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">-</span> <span class="ruby-constant">TWEET_LENGTH_LIMIT</span>)
 
   <span class="ruby-keyword">if</span> <span class="ruby-identifier">overtweet</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
 
-    <span class="ruby-identifier">$stdout</span>.<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Tweet too long by #{overtweet} char(s) (tweet length = #{tweet.length} chars)&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-node">&quot;Tweet too long by #{overtweet} char(s) (tweet length = #{@tweet.length} chars)&quot;</span>
 
-  <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">tweet</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">last_tweet</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@tweet</span> <span class="ruby-operator">==</span> <span class="ruby-ivar">@last_tweet</span>
 
-    <span class="ruby-identifier">$stdout</span>.<span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Duplicate of previous tweet (#{last_tweet}). Not sent.&quot;</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-node">&quot;Duplicate of previous tweet (#{@last_tweet}). Not sent.&quot;</span>
 
   <span class="ruby-keyword">else</span>
 
-    <span class="ruby-identifier">response</span> = <span class="ruby-constant">Twitter</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">tweet</span>)
-    <span class="ruby-identifier">tweet_text</span> = <span class="ruby-identifier">response</span>.<span class="ruby-identifier">text</span>
-    <span class="ruby-identifier">user</span> = <span class="ruby-identifier">response</span>.<span class="ruby-identifier">user</span>[<span class="ruby-string">&quot;screen_name&quot;</span>]
-    <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Tweet '#{tweet_text}' from user #{user} sent&quot;</span>
+    <span class="ruby-ivar">@response</span> = <span class="ruby-constant">Twitter</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">tweet</span>)
+    <span class="ruby-comment">#tweet_text = response.text</span>
+    <span class="ruby-comment">#user = response.user[&quot;screen_name&quot;]</span>
+    <span class="ruby-comment">#puts &quot;Tweet '#{tweet_text}' from user #{user} sent&quot;</span>
 
   <span class="ruby-keyword">end</span>
 

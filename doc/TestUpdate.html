@@ -70,9 +70,13 @@
 
   <ul class="link-list">
     
+    <li><a href="#method-i-random_word">#random_word</a>
+    
     <li><a href="#method-i-setup">#setup</a>
     
     <li><a href="#method-i-test_instantiation">#test_instantiation</a>
+    
+    <li><a href="#method-i-test_send_tweet">#test_send_tweet</a>
     
   </ul>
 </nav>
@@ -140,6 +144,44 @@
       <h3 class="section-header">Public Instance Methods</h3>
 
     
+      <div id="method-i-random_word" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">random_word</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="random_word-source">
+            <pre><span class="ruby-comment"># File tests/tc_update.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">random_word</span>()
+
+  <span class="ruby-identifier">letters</span> = { <span class="ruby-value">vv</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'AEIOU'</span>,
+              <span class="ruby-value">cc</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'BCDFGHJKLMNPRSTVWYZ'</span> }
+  <span class="ruby-identifier">word</span> = <span class="ruby-string">''</span>
+  <span class="ruby-string">'cvcvcv'</span>.<span class="ruby-identifier">each_byte</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">x</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">source</span> = <span class="ruby-identifier">letters</span>[<span class="ruby-identifier">x</span>]
+    <span class="ruby-identifier">word</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">source</span>[<span class="ruby-identifier">rand</span>(<span class="ruby-identifier">source</span>.<span class="ruby-identifier">length</span>)].<span class="ruby-identifier">chr</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">return</span> <span class="ruby-identifier">word</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- random_word-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- random_word-method -->
+
+    
       <div id="method-i-setup" class="method-detail ">
         
         <div class="method-heading">
@@ -191,7 +233,7 @@
 
           
           <div class="method-source-code" id="test_instantiation-source">
-            <pre><span class="ruby-comment"># File tests/tc_update.rb, line 22</span>
+            <pre><span class="ruby-comment"># File tests/tc_update.rb, line 35</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_instantiation</span>
 
   <span class="ruby-identifier">assert_respond_to</span>(<span class="ruby-ivar">@update</span>, <span class="ruby-value">:send_tweet</span>)
@@ -205,6 +247,59 @@
 
         
       </div><!-- test_instantiation-method -->
+
+    
+      <div id="method-i-test_send_tweet" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">test_send_tweet</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="test_send_tweet-source">
+            <pre><span class="ruby-comment"># File tests/tc_update.rb, line 41</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_send_tweet</span>
+
+  <span class="ruby-ivar">@tweet</span> = <span class="ruby-identifier">random_word</span>()
+
+ <span class="ruby-comment">#send valid tweet</span>
+
+  <span class="ruby-ivar">@test_tweet</span> = <span class="ruby-ivar">@update</span>.<span class="ruby-identifier">send_tweet</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@tweet</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@project</span>, <span class="ruby-ivar">@update</span>.<span class="ruby-identifier">project</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@update</span>.<span class="ruby-identifier">user</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@tweet</span>, <span class="ruby-ivar">@update</span>.<span class="ruby-identifier">tweet</span>)
+
+<span class="ruby-comment">#boundary tests</span>
+  <span class="ruby-comment">#on boundary</span>
+  <span class="ruby-ivar">@boundary</span> = (<span class="ruby-string">&quot;boundary tweet &quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-value">125</span>).<span class="ruby-identifier">map</span>{ (<span class="ruby-string">'a'</span><span class="ruby-operator">..</span><span class="ruby-string">'z'</span>).<span class="ruby-identifier">to_a</span>[<span class="ruby-identifier">rand</span>(<span class="ruby-value">26</span>)] }.<span class="ruby-identifier">join</span>)
+  <span class="ruby-ivar">@boundary_test_tweet</span> = <span class="ruby-ivar">@update</span>.<span class="ruby-identifier">send_tweet</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@boundary</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@project</span>, <span class="ruby-ivar">@update</span>.<span class="ruby-identifier">project</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@update</span>.<span class="ruby-identifier">user</span>)
+
+  <span class="ruby-comment">#boundary+1</span>
+  <span class="ruby-ivar">@max_tweet_length</span> = <span class="ruby-value">140</span>
+
+  <span class="ruby-ivar">@tweet_over_length</span> = (<span class="ruby-string">&quot;over length tweet &quot;</span> <span class="ruby-operator">+</span> (<span class="ruby-value">0</span><span class="ruby-operator">...</span><span class="ruby-value">123</span>).<span class="ruby-identifier">map</span>{ (<span class="ruby-string">'a'</span><span class="ruby-operator">..</span><span class="ruby-string">'z'</span>).<span class="ruby-identifier">to_a</span>[<span class="ruby-identifier">rand</span>(<span class="ruby-value">26</span>)] }.<span class="ruby-identifier">join</span>)
+  <span class="ruby-ivar">@overtweet_test</span> = <span class="ruby-ivar">@update</span>.<span class="ruby-identifier">send_tweet</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@tweet_over_length</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-string">&quot;Tweet too long by 1 char(s) (tweet length = 141 chars)&quot;</span>, <span class="ruby-ivar">@overtweet_test</span>)
+
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- test_send_tweet-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- test_send_tweet-method -->
 
     
     </section><!-- public-instance-method-details -->

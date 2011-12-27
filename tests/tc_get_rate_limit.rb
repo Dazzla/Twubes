@@ -16,6 +16,8 @@ class TestGetRateLimit < Test::Unit::TestCase
 
     @get_limit = GetRateLimit.new(@user, @project)
 
+    @limit_message = @get_limit.get
+
   end
 
 
@@ -28,8 +30,6 @@ class TestGetRateLimit < Test::Unit::TestCase
 
 
   def test_get_rate_limit
-
-    @limit_message = @get_limit.get
 
     assert_respond_to(@get_limit, :get)
     assert_respond_to(@limit_message, :reverse)

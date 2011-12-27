@@ -40,8 +40,8 @@ class TestSession < Test::Unit::TestCase
     assert_respond_to(@test_auth, :oauth_token)
     assert_equal(@consumer_key,       @test_auth.consumer_key)
     assert_equal(@consumer_secret,    @test_auth.consumer_secret)
-    assert_equal(@oauth_token,         @test_auth.oauth_token)
-    assert_equal(@oauth_token_secret,  @test_auth.oauth_token_secret)
+    assert_equal(@oauth_token,        @test_auth.oauth_token)
+    assert_equal(@oauth_token_secret, @test_auth.oauth_token_secret)
 
   end
 

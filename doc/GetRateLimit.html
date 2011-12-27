@@ -208,9 +208,6 @@
   <span class="ruby-ivar">@user</span> = <span class="ruby-identifier">user</span>
   <span class="ruby-ivar">@project</span> = <span class="ruby-identifier">project</span>
 
-  <span class="ruby-identifier">puts</span> <span class="ruby-ivar">@user</span>
-  <span class="ruby-identifier">puts</span> <span class="ruby-ivar">@project</span>
-
   <span class="ruby-identifier">session</span> = <span class="ruby-constant">Session</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
   <span class="ruby-identifier">session</span>.<span class="ruby-identifier">authenticate</span>()
 
@@ -247,11 +244,13 @@
 
           
           <div class="method-source-code" id="get-source">
-            <pre><span class="ruby-comment"># File get_rate_limit.rb, line 27</span>
+            <pre><span class="ruby-comment"># File get_rate_limit.rb, line 24</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">get</span>()
 
+  <span class="ruby-ivar">@limit_update</span> = <span class="ruby-constant">Twitter</span>.<span class="ruby-identifier">rate_limit_status</span>.<span class="ruby-identifier">reset_time</span>
+
   <span class="ruby-identifier">rl_remaining</span> =
-    <span class="ruby-constant">Twitter</span>.<span class="ruby-identifier">rate_limit_status</span>.<span class="ruby-identifier">remaining_hits</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot; Twitter API request(s) remaining this hour for #{@user}, using #{project}&quot;</span>
+    <span class="ruby-constant">Twitter</span>.<span class="ruby-identifier">rate_limit_status</span>.<span class="ruby-identifier">remaining_hits</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-node">&quot; Twitter API request(s) remaining this hour for #{@user}, using #{project}. Last reset at #{@limit_update}&quot;</span>
 <span class="ruby-keyword">end</span></pre>
           </div><!-- get-source -->
           

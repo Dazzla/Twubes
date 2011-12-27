@@ -165,7 +165,9 @@
   <span class="ruby-ivar">@project</span> = <span class="ruby-string">&quot;4978_project&quot;</span>
   <span class="ruby-ivar">@conf_file_path</span> = <span class="ruby-string">&quot;../auth/&quot;</span>
 
-  <span class="ruby-ivar">@get_limit</span> = <span class="ruby-constant">GetRateLimit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@project</span>, <span class="ruby-ivar">@conf_file_path</span>)
+  <span class="ruby-ivar">@get_limit</span> = <span class="ruby-constant">GetRateLimit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@project</span>)
+
+  <span class="ruby-ivar">@limit_message</span> = <span class="ruby-ivar">@get_limit</span>.<span class="ruby-identifier">get</span>
 
 <span class="ruby-keyword">end</span></pre>
           </div><!-- setup-source -->
@@ -194,10 +196,8 @@
 
           
           <div class="method-source-code" id="test_get_rate_limit-source">
-            <pre><span class="ruby-comment"># File tests/tc_get_rate_limit.rb, line 30</span>
+            <pre><span class="ruby-comment"># File tests/tc_get_rate_limit.rb, line 32</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_get_rate_limit</span>
-
-  <span class="ruby-ivar">@limit_message</span> = <span class="ruby-ivar">@get_limit</span>.<span class="ruby-identifier">get</span>
 
   <span class="ruby-identifier">assert_respond_to</span>(<span class="ruby-ivar">@get_limit</span>, <span class="ruby-value">:get</span>)
   <span class="ruby-identifier">assert_respond_to</span>(<span class="ruby-ivar">@limit_message</span>, <span class="ruby-value">:reverse</span>)
@@ -229,11 +229,11 @@
 
           
           <div class="method-source-code" id="test_params-source">
-            <pre><span class="ruby-comment"># File tests/tc_get_rate_limit.rb, line 22</span>
+            <pre><span class="ruby-comment"># File tests/tc_get_rate_limit.rb, line 24</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">test_params</span>
 
-  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-constant">GetRateLimit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@project</span>, <span class="ruby-ivar">@conf_file_path</span>).<span class="ruby-identifier">user</span>)
-  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@project</span>, <span class="ruby-constant">GetRateLimit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@project</span>, <span class="ruby-ivar">@conf_file_path</span>).<span class="ruby-identifier">project</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-constant">GetRateLimit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@project</span>).<span class="ruby-identifier">user</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@project</span>, <span class="ruby-constant">GetRateLimit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@project</span>).<span class="ruby-identifier">project</span>)
 
 <span class="ruby-keyword">end</span></pre>
           </div><!-- test_params-source -->
