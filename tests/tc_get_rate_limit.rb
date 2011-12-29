@@ -5,6 +5,7 @@ $LOAD_PATH << '~/src/ruby/projects/Twitter/Twubes/'
 require 'test/unit'
 require 'twitter_auth'
 require 'get_rate_limit'
+#require 'json'
 
 class TestGetRateLimit < Test::Unit::TestCase
 
