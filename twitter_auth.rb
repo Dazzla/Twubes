@@ -1,13 +1,14 @@
 #!/usr/bin/ruby
 
+require 'rubygems'
+require 'twitter'
+require 'get_credentials'
+
 class   Session
 
 =begin
 Provides authentication and session managment methods for API requests
 =end
-
-  require 'rubygems'
-  require 'twitter'
 
   attr_reader :auth_file
   attr_accessor:user, :project
@@ -17,15 +18,13 @@ Provides authentication and session managment methods for API requests
     @user = user.downcase
     @project = project.downcase
 
-    @auth_file         =   '/Users/Dazzla/Dropbox/src/ruby/projects/Twitter/Twubes/auth/twitter_keys.yaml'
+    @credentials = GetCredentials.new(@user, @project)
 
-    @keys = YAML.load_file(@auth_file)
+    @consumer_key       =   @credentials.consumer_key
+    @consumer_secret    =   @credentials.consumer_secret
 
-    @consumer_key       =   @keys["project"][project]["consumer_key"]
-    @consumer_secret    =   @keys["project"][project]["consumer_secret"]
-
-    @oauth_token        =   @keys["user"][user]["access_token"]
-    @oauth_token_secret =   @keys["user"][user]["token_secret"]
+    @oauth_token        =   @credentials.oauth_token
+    @oauth_token_secret =   @credentials.oauth_token_secret
 
   end
 

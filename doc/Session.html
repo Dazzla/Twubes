@@ -95,11 +95,21 @@
 
   <ul class="link-list">
   
+    <li><a href="./GenerateTweets.html">GenerateTweets</a>
+  
+    <li><a href="./GetCredentials.html">GetCredentials</a>
+  
     <li><a href="./GetRateLimit.html">GetRateLimit</a>
+  
+    <li><a href="./OauthTwitter.html">OauthTwitter</a>
   
     <li><a href="./Object.html">Object</a>
   
     <li><a href="./Session.html">Session</a>
+  
+    <li><a href="./TestGenerateTweets.html">TestGenerateTweets</a>
+  
+    <li><a href="./TestGetCredentials.html">TestGetCredentials</a>
   
     <li><a href="./TestGetRateLimit.html">TestGetRateLimit</a>
   
@@ -146,7 +156,7 @@
 
         <div class="method-description">
         
-        
+        <p>Provides authentication and session managment methods for API requests</p>
         
         </div>
       </div>
@@ -202,21 +212,19 @@
 
           
           <div class="method-source-code" id="new-source">
-            <pre><span class="ruby-comment"># File twitter_auth.rb, line 15</span>
+            <pre><span class="ruby-comment"># File twitter_auth.rb, line 16</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
 
   <span class="ruby-ivar">@user</span> = <span class="ruby-identifier">user</span>.<span class="ruby-identifier">downcase</span>
   <span class="ruby-ivar">@project</span> = <span class="ruby-identifier">project</span>.<span class="ruby-identifier">downcase</span>
 
-  <span class="ruby-ivar">@auth_file</span>         =   <span class="ruby-string">'/Users/Dazzla/Dropbox/src/ruby/projects/Twitter/Twubes/auth/twitter_keys.yaml'</span>
+  <span class="ruby-ivar">@credentials</span> = <span class="ruby-constant">GetCredentials</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@project</span>)
 
-  <span class="ruby-ivar">@keys</span> = <span class="ruby-constant">YAML</span>.<span class="ruby-identifier">load_file</span>(<span class="ruby-ivar">@auth_file</span>)
+  <span class="ruby-ivar">@consumer_key</span>       =   <span class="ruby-ivar">@credentials</span>.<span class="ruby-identifier">consumer_key</span>
+  <span class="ruby-ivar">@consumer_secret</span>    =   <span class="ruby-ivar">@credentials</span>.<span class="ruby-identifier">consumer_secret</span>
 
-  <span class="ruby-ivar">@consumer_key</span>       =   <span class="ruby-ivar">@keys</span>[<span class="ruby-string">&quot;project&quot;</span>][<span class="ruby-identifier">project</span>][<span class="ruby-string">&quot;consumer_key&quot;</span>]
-  <span class="ruby-ivar">@consumer_secret</span>    =   <span class="ruby-ivar">@keys</span>[<span class="ruby-string">&quot;project&quot;</span>][<span class="ruby-identifier">project</span>][<span class="ruby-string">&quot;consumer_secret&quot;</span>]
-
-  <span class="ruby-ivar">@oauth_token</span>        =   <span class="ruby-ivar">@keys</span>[<span class="ruby-string">&quot;user&quot;</span>][<span class="ruby-identifier">user</span>][<span class="ruby-string">&quot;access_token&quot;</span>]
-  <span class="ruby-ivar">@oauth_token_secret</span> =   <span class="ruby-ivar">@keys</span>[<span class="ruby-string">&quot;user&quot;</span>][<span class="ruby-identifier">user</span>][<span class="ruby-string">&quot;token_secret&quot;</span>]
+  <span class="ruby-ivar">@oauth_token</span>        =   <span class="ruby-ivar">@credentials</span>.<span class="ruby-identifier">oauth_token</span>
+  <span class="ruby-ivar">@oauth_token_secret</span> =   <span class="ruby-ivar">@credentials</span>.<span class="ruby-identifier">oauth_token_secret</span>
 
 <span class="ruby-keyword">end</span></pre>
           </div><!-- new-source -->
@@ -251,7 +259,7 @@
 
           
           <div class="method-source-code" id="authenticate-source">
-            <pre><span class="ruby-comment"># File twitter_auth.rb, line 34</span>
+            <pre><span class="ruby-comment"># File twitter_auth.rb, line 33</span>
 <span class="ruby-keyword">def</span> <span class="ruby-identifier">authenticate</span>()
 
   <span class="ruby-constant">Twitter</span>.<span class="ruby-identifier">configure</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">config</span><span class="ruby-operator">|</span>

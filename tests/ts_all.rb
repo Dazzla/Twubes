@@ -10,6 +10,7 @@ puts  Time.new
 puts "------------------------------"
 puts
 
+require 'tc_get_credentials'
 require 'tc_twitter_auth'
 require 'tc_get_rate_limit'
 require 'tc_update'

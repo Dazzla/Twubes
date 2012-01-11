@@ -4,7 +4,7 @@
 <head>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
 
-<title>Class: Object</title>
+<title>Class: OauthTwitter</title>
 
 <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
 
@@ -47,7 +47,7 @@
     <nav id="file-list-section" class="section">
   <h3 class="section-header">Defined In</h3>
   <ul>
-    <li>tests.rb
+    <li>oauth_twitter.rb
   </ul>
 </nav>
 
@@ -59,7 +59,7 @@
     <nav id="parent-class-section" class="section">
   <h3 class="section-header">Parent</h3>
   
-  <p class="link">
+  <p class="link"><a href="Object.html">Object</a>
   
 </nav>
 
@@ -70,9 +70,7 @@
 
   <ul class="link-list">
     
-    <li><a href="#method-i-get_rate_limit">#get_rate_limit</a>
-    
-    <li><a href="#method-i-send_update">#send_update</a>
+    <li><a href="#method-c-new">::new</a>
     
   </ul>
 </nav>
@@ -126,7 +124,7 @@
 </nav>
 
 <div id="documentation">
-  <h1 class="class">class Object</h1>
+  <h1 class="class">class OauthTwitter</h1>
 
   <div id="description" class="description">
     
@@ -146,14 +144,14 @@
 
     <!-- Methods -->
     
-     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
-      <h3 class="section-header">Public Instance Methods</h3>
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
 
     
-      <div id="method-i-get_rate_limit" class="method-detail ">
+      <div id="method-c-new" class="method-detail ">
         
         <div class="method-heading">
-          <span class="method-name">get_rate_limit</span><span
+          <span class="method-name">new</span><span
             class="method-args">(user, project)</span>
           <span class="method-click-advice">click to toggle source</span>
         </div>
@@ -165,59 +163,53 @@
           
 
           
-          <div class="method-source-code" id="get_rate_limit-source">
-            <pre><span class="ruby-comment"># File tests.rb, line 17</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_rate_limit</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File oauth_twitter.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
 
-  <span class="ruby-identifier">get_limit</span> = <span class="ruby-constant">GetRateLimit</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
-  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">get_limit</span>.<span class="ruby-identifier">get</span>()
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">user</span>
+  <span class="ruby-identifier">puts</span> <span class="ruby-identifier">project</span>
 
-<span class="ruby-keyword">end</span></pre>
-          </div><!-- get_rate_limit-source -->
-          
-        </div>
+  <span class="ruby-ivar">@user</span> = <span class="ruby-identifier">user</span>.<span class="ruby-identifier">downcase</span>
+  <span class="ruby-ivar">@project</span> = <span class="ruby-identifier">project</span>.<span class="ruby-identifier">downcase</span>
 
-        
+  <span class="ruby-ivar">@credentials</span> = <span class="ruby-constant">GetCredentials</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@user</span>, <span class="ruby-ivar">@project</span>)
 
-        
-      </div><!-- get_rate_limit-method -->
+  <span class="ruby-ivar">@consumer_key</span>       =   <span class="ruby-ivar">@credentials</span>.<span class="ruby-identifier">consumer_key</span>
+  <span class="ruby-ivar">@consumer_secret</span>    =   <span class="ruby-ivar">@credentials</span>.<span class="ruby-identifier">consumer_secret</span>
 
-    
-      <div id="method-i-send_update" class="method-detail ">
-        
-        <div class="method-heading">
-          <span class="method-name">send_update</span><span
-            class="method-args">(user, project, tweet)</span>
-          <span class="method-click-advice">click to toggle source</span>
-        </div>
-        
+  <span class="ruby-ivar">@oauth_token</span>        =   <span class="ruby-ivar">@credentials</span>.<span class="ruby-identifier">oauth_token</span>
+  <span class="ruby-ivar">@oauth_token_secret</span> =   <span class="ruby-ivar">@credentials</span>.<span class="ruby-identifier">oauth_token_secret</span>
 
-        <div class="method-description">
-          
-          
-          
+  <span class="ruby-identifier">consumer</span> = <span class="ruby-constant">OAuth</span><span class="ruby-operator">::</span><span class="ruby-constant">Consumer</span>.<span class="ruby-identifier">new</span>(<span class="ruby-ivar">@consumer_key</span>, <span class="ruby-ivar">@consumer_secret</span>,
+  <span class="ruby-value">:site</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;https://api.twitter.com&quot;</span> )
 
-          
-          <div class="method-source-code" id="send_update-source">
-            <pre><span class="ruby-comment"># File tests.rb, line 9</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">send_update</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>, <span class="ruby-identifier">tweet</span>)
+  <span class="ruby-identifier">request_token</span> = <span class="ruby-identifier">consumer</span>.<span class="ruby-identifier">get_request_token</span>
 
+  <span class="ruby-comment"># open browser for authorization</span>
+  <span class="ruby-constant">Launchy</span>.<span class="ruby-identifier">open</span> <span class="ruby-identifier">request_token</span>.<span class="ruby-identifier">authorize_url</span>
 
-  <span class="ruby-identifier">new_tweet</span> = <span class="ruby-constant">TweetUpdate</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">project</span>)
-  <span class="ruby-identifier">new_tweet</span>.<span class="ruby-identifier">send_tweet</span>(<span class="ruby-identifier">user</span>, <span class="ruby-identifier">tweet</span>)
+  <span class="ruby-identifier">puts</span> <span class="ruby-string">&quot;Please authorize the app to have access to your Twitter account. A pincode will be displayed to you, please enter it here:&quot;</span>
+
+  <span class="ruby-identifier">pincode</span> = <span class="ruby-identifier">gets</span>.<span class="ruby-identifier">chomp</span>
+
+  <span class="ruby-identifier">access_token</span> = <span class="ruby-identifier">request_token</span>.<span class="ruby-identifier">get_access_token</span> <span class="ruby-value">:pin</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">pincode</span>
+
+  <span class="ruby-identifier">access_token</span>.<span class="ruby-identifier">token</span> <span class="ruby-comment"># user token</span>
+  <span class="ruby-identifier">access_token</span>.<span class="ruby-identifier">secret</span> <span class="ruby-comment"># user oauth secret</span>
 
 <span class="ruby-keyword">end</span></pre>
-          </div><!-- send_update-source -->
+          </div><!-- new-source -->
           
         </div>
 
         
 
         
-      </div><!-- send_update-method -->
+      </div><!-- new-method -->
 
     
-    </section><!-- public-instance-method-details -->
+    </section><!-- public-class-method-details -->
   
   </section><!-- 5Buntitled-5D -->
 
